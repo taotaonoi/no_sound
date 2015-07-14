@@ -1,0 +1,2889 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link href= "css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+        <title>หนูไม่กลัวโรงพยาบาล</title>
+		
+    </head>
+    
+    <body>
+        <div id="disablingDiv" ></div>
+        <!-- Logo Page --> 
+		<div id="logo" data-role="page">
+			<img class="mainhead" align="center" src="img/head.gif">
+			<div>
+				<img id="logotu" src = "img/tu.png" />
+			</div>
+			<div>
+				<img id ="logohos" src = "img/hos.png" />
+			</div>
+		</div>
+		
+        <!-- Touch Screen Page --> 
+        <a id="touch" href="#loading" data-role="page">
+			<img class="mainhead" align="center" src="img/head.gif">
+			<img class="touchpic" src="img/bdc.png">
+			<img class ="towertouch" src="img/tower.png">
+		</a> 
+        <!-- Loading Page --> 
+        <a id="loading" href="#" data-role="page" ></a> 
+        
+		<!-- Login Page -->
+        <div id="login" data-role="page">
+		 <img src="img/logo.png" class="logo">
+		 <img src="img/sound.png" class="sound">
+
+		 <p class="opacity" align="center">คุณคือใคร?</p>
+			<div class="orange" align="center">
+				
+				<div class="head6">
+					<p>ผู้ป่วย</p>
+					<p>แพทย์และพยาบาล</p>
+				</div>
+				
+				<div class="pic1">
+					<img src="img/child.png" class="child">
+					<img src="img/doc.png" class="doctor">
+				</div>
+					
+				<div class="pic2" align="center">
+					<img src="img/grest.png" class="grest">
+				</div>
+					
+			</div>	
+			
+			<img class="close" src="img/close.png" onclick=" navigator.app.exitApp();">  
+			
+		</div>
+	
+
+		<!-- Confirm Popup -->
+		<div id="confirm" data-role="page">
+			
+			<img src="img/sound.png" class="sound">
+			<p class="head1">กรุณากรอกข้อมูลผู้ใช้</p>
+						
+			<div class="orange" align="center" data-role="content"> 
+				<div class="textinput2">
+					<div class="block">
+						<p>Username</p>
+						<fieldset class="inline">
+							<input id="tb" class="user" type="text" style="width:300px">
+						</fieldset>
+					</div>
+				
+					<div class="block">
+						<p>Password</p>
+						<fieldset class="inline">
+							<input id="tb" class="password" type="password" style="width:300px">
+						</fieldset>
+					</div>
+				</div>
+				
+				<!--  id doctor -->
+				<img class="popuppic" src="img/popup-fail.png">
+				<img class="popuppic2" src="img/popup-success.png">
+				<img align="right" src="img/can-a.png" class="cancel">
+				<img align="right" src="img/in-a.png" class="in get2">
+				<img align="left" src="img/re-a.png" class="edit">
+				
+			</div>	
+		
+			<img class="close" src="img/close.png" onclick=" navigator.app.exitApp();"> 
+			<img class="back" src="img/back.png" align="left">
+			<img class="logo" src="img/logo.png">  
+		</div>
+		
+		<!-- Confirm Popup Kid -->
+		<div id="confirmkid" data-role="page">
+			<img src="img/sound.png" class="sound">
+			<p class="head1">กรุณากรอกข้อมูลผู้ใช้</p>
+				
+			<div class="orange" data-role="content"> 
+				<div class="textinput">
+					
+					<div class="block">
+						<p>HN</p>
+						<fieldset class="inline">
+							<input id="tb" class="hntext1" type="text" size=4 onKeyup="autotab(this, document.hn2, 1)" maxlength=3 style="width:50px" name="hn">
+							-
+							<input id="tb" class="hntext2" type="text" size=3 onKeyup="autotab(this, document.hn3, 2)" maxlength=2 style="width:35px" name="hn">
+							-
+							<input id="tb" class="hntext3" type="text" size=3 maxlength=2 style="width:35px" name="hn"> 
+						</fieldset>
+					</div>
+					
+					<div class="block">
+						<p>เพศ</p>
+						<img class="gender boy" align="middle" src="img/boy1.png">
+						<img class="gender girl" align="middle" src="img/girl.png">
+					</div>
+					
+					<div class="block">
+						<p>อายุ</p>
+						<p class="yeardown" ><img src="img/mi-a.png" align="middle"></p>
+						<img class="age-year" align="middle" src="img/5.png">
+						<p class="yearup" ><img src="img/plus-a.png" align="middle"></p>
+						<p>ปี</p>
+						<!--bird-->
+						<p class="monthdown" ><img src="img/mi-a.png" align="middle"></p>
+						<img class="age-month" align="middle" src="img/1.png">
+						<p class="monthup" ><img src="img/plus-a.png" align="middle"></p>
+						<p>เดือน</p>
+					</div>
+					
+					<p>กลุ่ม</p>
+					<img class="group g1" align="middle" src="img/g1-1.gif">
+					<img class="group g3" align="middle" src="img/g2.gif">
+				</div>
+				
+				
+				<img align="right" src="img/can-a.png" class="cancel">
+				<img align="right" src="img/in-a.png" class="in hh get1">
+				<img align="left" src="img/re-a.png" class="edit">
+				
+			</div>	
+			
+			<img class="popuppic" src="img/popup-fail.png">
+			<img class="popuppic2" src="img/popup-success.png">
+			<img class="close" src="img/close.png" onclick=" navigator.app.exitApp();"> 
+			<img class="back" src="img/back.png" align="left">
+			<img class="logo" src="img/logo.png">  
+			<div class="popupsession">
+				<img class="popimg" src="img/popupsession.png" />
+				<div>
+					<img class="popcan2" src="img/popcan.png" />
+					<img class="popok2" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<script>
+		function autotab(original,destination,i){
+			if (original.getAttribute&&original.value.length==original.getAttribute("maxlength"))
+			 document.getElementsByName("hn")[i].focus();
+		}
+		</script>
+		
+        <!-- Main Page (Guest)-->
+        <div id="main" data-role="page">
+		<img class="grouppic" src="img/ga.png" />	
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+		
+				<div class="mainmain">
+
+					<img class="mainhead" align="center" src="img/head.gif">
+					
+					<div class="mainbutton" align="right">
+						<img class="button1" src="img/button1.png">
+						<img class="button2" src="img/button2.png">
+						<img class="button3" src="img/button3.png">
+					</div>
+
+					<!-- <img class="logout" src="img/logout.png" width="61" height="61" ></img> -->
+
+
+					<div class="maintower">
+						<img class ="tower" src="img/tower.png"></img>
+					</div>
+
+				
+					<div class="mainlogo">
+						<img  class="logo" src="img/logo.png"></img>
+					</div>
+
+				</div>
+				<div class="popuplogout">
+					<img class="popimg" src="img/popup-logout.png" />
+					<div>
+						<img class="popcan" src="img/popcan.png" />
+						<img class="popok" src="img/popok.png" />
+					</div>
+				</div>
+			</div>
+			
+		 <!-- Main Page (VAS) --> 
+		<div id="main1" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+          <div class="mainmain">
+					<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+						<img class="grouppic" src="img/ga.png">
+					
+					<img class="mainhead" align="center" src="img/head.gif">
+					
+					<div class="mainbutton" align="right">
+						<img class="button1" src="img/button1.png">
+						<img class="button2" src="img/button2.png">
+						<img class="button3" src="img/button3.png">
+						<img class="button4" src="img/button4.png">
+					</div>
+
+
+					<!-- <img class="logout" src="img/logout.png" width="61" height="61" ></img> -->
+
+
+					<div class="maintower">
+						<img class ="tower" src="img/tower.png"></img>
+					</div>
+					
+					<div class="mainlogo">
+						<img  class="logo" src="img/logo.png"></img>
+					</div>
+
+				</div>
+				<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+				</div>
+		</div>
+		  
+		<!-- Main Page (myPAS) -->  
+		<div id="main2" data-role="page">
+				<img class="grouppic" src="img/ga.png" />
+			 <div class="mainmain">
+					<img class="mainhead" align="center" src="img/head.gif">
+					
+					
+					<div class="mainbutton" align="right">
+						<img class="button5" src="img/button5.png">
+						<img class="button6" src="img/button6.png">
+					</div>
+
+
+					<!-- <img class="logout" src="img/logout.png" width="61" height="61" ></img> -->
+
+
+					<div class="maintower">
+						<img class ="tower" src="img/tower.png"></img>
+					</div>
+
+					<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+					<div class="mainlogo">
+						<img class="logo" src="img/logo.png"></img>
+					</div>
+
+				</div>
+				<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+				</div>
+		 </div>
+		  
+         <!-- Video Page -->
+        <div data-role="page" id="vid">
+				<img class="grouppic" src="img/ga.png" />
+				<p class="head1">มารู้จักการเจาะไขกระดูกกันเถอะ (video)</p>
+			
+				<div data-role="content" align="center">
+					
+					<video width="960" height="370" poster="img/vidposter.png" controls autoplay>
+					  <source src="/Removable/MicroSD/video.mp4" type="video/mp4">
+					</video>
+				</div>  	
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">  
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+        </div>
+        
+		<!-- Game Page -->
+        <div data-role="page" id="game">
+				<img class="grouppic" src="img/ga.png" />
+			
+			<p class="head1">เกม (games)</p>
+			
+			<div class="orange" align="center" data-role="content"> 
+				
+				<div class="head5">
+					<p>เกมจับคู่ภาพ</p>
+					<p>เกมระบายสี</p>
+				</div>
+					
+				<div class="pic1"  align="center">
+					<img src="img/match.png" class="gamematch">
+					<img src="img/paint.png" class="gamepaint">
+				</div>
+			
+			</div>	
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>	  
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+        </div>
+		
+		<!-- Reduce Stress Page --> 
+		<div data-role="page" id="rs">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">วิธีขจัดความกลัว (stress relief)</p>
+			
+			<div class="orange" align="center" data-role="content"> 
+				
+				<div class="head4">
+					<p> ฝึกการหายใจ </p>
+					<p>จำลองสถานการณ์</p>
+				</div>
+				
+				<div class="pic1" align="center" data-role="content">
+					<img src="img/balloon.png" class="reduceballoon">
+					<img src="img/simulator.png" class="reducesim">
+				</div>
+				
+				
+			</div>	
+			<img class="back" src="img/back.png" align="left">
+			
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+        </div>
+        
+		<!-- Balloon Page 1 -->
+		<div id="balloon1" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<div class="b1">
+				<div align="right">
+					<img class="howto2" src="img/how-af.png">
+				</div>
+				<div align="right">
+					<img class="start2" src="img/start-af.png">
+				</div>
+			</div>
+			<img class="back" src="img/back.png" align="left">
+			<img class="logo" src="img/logo.png">
+			<img class="home" src="img/home.png">
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Balloon Page 2 -->
+		<div id="balloon2" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">วิธีการฝึกหายใจ</p>
+			<video width="960" height="370" poster="img/balloonposter.png" controls>
+					  <source src="/Removable/MicroSD/balloon.mp4" type="video/mp4">
+			</video> 
+			
+			<img class="logo" src="img/logo.png">
+			<a href="#balloon"><img class="go" src="img/start-ballt.png"></a>
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Balloon Page -->
+		<div id="balloon" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">มากำจัดความกลัวกันเถอะ (stress relief)</p>
+		
+			<video width="960" height="370" poster="img/balloonposter.png" controls>
+					 <source src="/Removable/MicroSD/balloon.mp4" type="video/mp4">
+			</video> 
+			
+			<img class="logo" src="img/logo.png"> 
+			<img class="home" src="img/home.png">
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+
+		<!-- VAS Main -->
+		<div id="vasmain" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">เครื่องมือวัดความกังวล (VAS)</p>
+			
+			<div class="orange" align="center" data-role="content"> 
+				
+				<div class="head3">
+					<p> ผู้ป่วย </p>
+					<p>ผู้ปกครอง</p>
+				</div>
+				
+				<div class="pic1" align="center" data-role="content">
+					<img src="img/child.png" class="vaschild">
+					<img src="img/parent.png" class="vasparent">
+				</div>
+				
+			</div>	
+				
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png"> 
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- VAS Page (Child) -->
+		<div align="center" id="evkid" data-role="page">	
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">เครื่องมือวัดความกังวล (VAS)</p>
+			
+			<div class="orange" align="center" data-role="content"> 
+				
+				<div class="head11" align="left">
+					<p class="kidhead">ตอนนี้เธอให้คะแนนความกลัวหรือความกังวลเท่าไรดีนะ? </p>
+				</div>
+				
+				<div class="evcontentkid sscore">
+					<img class="pickid" align="middle" src="img/s0.png" alt="" >
+					<img class="pickid" align="middle" src="img/s2.png" alt="" >
+					<img class="pickid" align="middle" src="img/s4.png" alt="" >
+					<img class="pickid" align="middle" src="img/s6.png" alt="" >
+					<img class="pickid" align="middle" src="img/s8.png" alt="" >
+					<img class="pickid" align="middle" src="img/s10.png" alt="" >
+				</div>   
+				
+				<div class="evcontentkid">
+					<img class="pickid pk1" align="middle" src="img/p1.png" alt="" >
+					<img class="pickid pk2" align="middle" src="img/pic2.png" alt="" >
+					<img class="pickid pk3" align="middle" src="img/pic3.png" alt="" >
+					<img class="pickid pk4" align="middle" src="img/pic4.png" alt="" >
+					<img class="pickid pk5" align="middle" src="img/pic5.png" alt="" >
+					<img class="pickid pk6" align="middle" src="img/pic6.png" alt="" >
+				</div>   
+
+				<img class="popuppic3" src="img/buntik.png">	
+				
+				<p class="echo"></p>
+				<img align="right" src="img/save-a.png" class="save database">
+			</div>	
+		
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">  
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div> 	
+		
+		<script>
+			$('.popuppic3').hide();
+									document.getElementById('disablingDiv').style.display='none';
+		</script>
+		
+		<!-- VAS Page (Parent) -->
+		<div align="center" id="evparent" data-role="page">	
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">เครื่องมือวัดความกังวล (VAS)</p>
+			
+			<div class="orange" align="center" data-role="content"> 
+				
+				<div class="head7">
+					<p class="kidhead" align="left">คุณมีความกังวลต่อการเข้ารับการรักษาของลูกคุณมากแค่ไหน</p>
+				</div>
+				
+				<div class="evcontent">
+					<img class="scale" src="img/scale0.png">
+					<img class="scaledown" src="img/button-down.png">
+					<img class="scaleup" src="img/button-up.png">
+				</div>    
+				
+				<img align="right" src="img/save-a.png" class="save database2">
+			</div>	
+			
+			
+			<img class="popuppic3" src="img/buntik.png">	
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">  
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div> 	
+		
+		<script>
+			$('.popuppic3').hide();
+									document.getElementById('disablingDiv').style.display='none';
+		</script>
+		
+		<!-- myPAS Page 1-->
+		<div id="mypas" data-role="page" data-type="horizontal">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head8" align="center">แบบประเมินความกังวลสำหรับผู้สังเกตการณ์ (mYPAS)</p>
+			
+			<div class="orange" align="left" data-role="content"> 
+				<p class="mypashn" align="right">HN</p>
+				<p class="head10" align="center">A.ลักษณะท่าทาง (Activity)</p>
+				  
+				 <div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					  <input type="radio" class="radio" name="radio1" id="radio1_0" value="" checked/>
+					  <label class="rddd" for="radio1_0">1 =  มองรอบๆห้อง มีท่ามีอยากรู้ เล่นของเล่น อ่านนิทาน (หรือพฤติกรรมตามวัยที่เหมาะสมอื่นๆ) เดินไปมารอบห้อง เพื่อไปหาของเล่นหรือเดินไปหาพ่อแม่ เดินสำรวจเครื่องมือในห้อง (Looking around, curious, playing with toys, read-ing (or other age-appropriate behavior); moves around holding area/treatment room to get toys or go to parent; may move toward OR equipment.)
+
+</label>
+					  <input type="radio" class="radio" name="radio1" id="radio1_1" value="" />
+					  <label for="radio1_1">2 = ไม่เดินสำรวจไม่เล่น อาจนั่งก้มหน้าหรือลุกลี้ลุกลน ยุกยิกไปมา ดูดนิ้วหรือผ้าห่ม นั่งใกล้ๆ กับพ่อแม่ขณะรอทำหัตถการ หรือเล่นวุ่นวายผิดปกติ 
+(Not exploring or playing, may look down, may fidget with hands or suck thumb (blanket); may sit close to parent while waiting, or play has a definite manic quality.)
+</label>
+					  <input type="radio" class="radio" name="radio1" id="radio1_2" value="" />
+					  <label for="radio1_2">3 = ไม่สนใจของเล่นแต่กลับเข้าหาพ่อแม่ หรือเคลื่อนไหวไปมาโดยไม่ได้ทำกิจกรรมใดๆ มีการเคลื่อนไหวหรือเล่นแบบกลัวสุดขีด บิดตัวไปมาหรือเคลื่อนไหวบนเตียง อาจผลักอุปกรณ์ออก หรืออยู่ติดกับพ่อแม่ไม่ไปไหน
+(Moving from toy to parent in unfocused manner, nonactivity-derived movements; frenetic/frenzied movement or play; squirming, moving on table, may push mask away, or clinging to parent.)
+</label>
+					  <input type="radio" class="radio" name="radio1" id="radio1_3" value="" />
+					  <label for="radio1_3">4 = พยายามหนี ผลัก เตะ ดิ้น หรือวิ่งไปมาในห้องอย่างไร้จุดหมายในขณะที่รอ ไม่สนใจของเล่น ไม่ยอมแยกจากพ่อแม่ เกาะพ่อแม่ไว้แน่น
+(Actively trying to get away, pushes with feet and arms, may move whole body; in waiting room, running around unfocused, not looking at toys or will not sepa-rate from parent, desperate clinging.)
+</label>
+					</fieldset>
+				  </div>
+
+				  <a href="#mypas2"><img class="next" src="img/next.png" align="right"></a>
+				  
+			</div>	
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">  
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div> 	 
+	
+		<!-- myPAS Page 2-->
+		<div id="mypas2" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head8" align="center">แบบประเมินความกังวลสำหรับผู้สังเกตการณ์ (mYPAS)</p>
+			
+				<div class="orange" align="left" data-role="content"> 
+				<p class="mypashn" align="right">HN</p>
+				<p class="head10" align="center">B. การพูดและการตอบคำถาม (Vocalizations)  
+</p>
+				  
+				 <div data-role="fieldcontain" data-type="horizontal">
+					<fieldset data-role="controlgroup">
+					  <input type="radio" class="radio" name="radio2" id="radio2_0" value="" checked/>
+					  <label for="radio2_0">1 = อ่านหนังสือ ถามคำถาม ออกความเห็น เล่นน้ำลาย หัวเราะ พร้อมที่จะตอบคำถามที่ถามทันที ในเด็กเล็กๆ ที่ยังพูดหรือตอบคำถามไม่เก่ง อาจจะดูเงียบ แต่ก็นั่งเล่นของเล่นอย่างสงบ 
+(Reading (nonvocalizing appropriate to activity), asking questions, making comments, babbling, laugh-ing, readily answers questions but may be generally 
+</label>
+					  <input type="radio" class="radio" name="radio2" id="radio2_1" value="" />
+					  <label for="radio2_1">2 = ตอบคำถามด้วยการกระซิบ พูดเหมือนเด็กเล็กๆ หรือพยักหน้าเท่านั้น
+(Responding to adults but whispers, “baby talk,” only head nodding.) 
+</label>
+					  <input type="radio" class="radio" name="radio2" id="radio2_2" value="" />
+					  <label for="radio2_2">3 = เงียบ ไม่มีเสียงโต้ตอบกับผู้ใหญ่
+(Quiet, no sounds or responses to adults.)
+</label>
+					  <input type="radio" class="radio" name="radio2" id="radio2_3" value="" />
+					  <label for="radio2_3">4 = คร่ำครวญ ร้องคราง ร้องไห้เงียบๆ
+(Whimpering, moaning, groaning, silently crying.)
+</label>
+					  <input type="radio" class="radio" name="radio2" id="radio2_4" value="" />
+					  <label for="radio2_4">5 =  ร้องไห้ หรือกรีดร้องว่า "ไม่“
+(Crying or may be screaming “no.”)
+</label>
+					  <input type="radio" class="radio" name="radio2" id="radio2_5" value="" />
+					  <label for="radio2_5">6 = ร้องไห้ กรีดร้องเสียงดัง ร้องนานต่อเนื่อง
+Crying, screaming loudly, sustained) 
+</label>
+					</fieldset>
+				  </div>
+
+				  <a href="#mypas3"><img class="next" src="img/next.png" align="right"></a>
+				  
+			</div>		
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">  
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div> 	 
+		
+		<!-- myPAS Page 3-->
+		<div id="mypas3" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head8" align="center">แบบประเมินความกังวลสำหรับผู้สังเกตการณ์ (mYPAS)</p>
+			
+					<div class="orange" align="left" data-role="content"> 
+					<p class="mypashn" align="right">HN</p>
+				<p class="head10" align="center">C. การแสดงอารมณ์ (Emotional expressivity)
+</p>
+				  
+				 <div data-role="fieldcontain" data-type="horizontal">
+					<fieldset data-role="controlgroup">
+					  <input type="radio" class="radio" name="radio3" id="radio3_0" value="" checked/>
+					  <label for="radio3_0">1 = ดูมีความสุข ยิ้ม มีสมาธิกับการเล่น
+(Manifestly happy, smiling, or concentrating on play.)
+</label>
+					  <input type="radio" class="radio" name="radio3" id="radio3_1" value="" />
+					  <label for="radio3_1">2 = ดูเฉยๆ ไม่แสดงความรู้สึกทางสีหน้า
+(Neutral, no visible expression on face.)
+</label>
+					  <input type="radio" class="radio" name="radio3" id="radio3_2" value="" />
+					  <label for="radio3_2">3 = ดูกังวล กลัว เศร้าเสียใจ หรือมีน้ำตาเอ่อ
+(Worried (sad) to frightened, sad, worried, or tearful eyes.)
+</label>
+					  <input type="radio" class="radio" name="radio3" id="radio3_3" value="" />
+					  <label for="radio3_3">4 = โศกเศร้า ร้องไห้ แสดงความกังวลอย่างมาก ตาเบิกโพลง
+(Distressed, crying, extremely upset, may have wide eyes.)
+</label>
+					</fieldset>
+				  </div>
+
+				  <a href="#mypas4"><img class="next" src="img/next.png" align="right"></a>
+				  
+			</div>		
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">  
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div> 	 
+		
+		<!-- myPAS Page 4-->
+		<div id="mypas4" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head8" align="center">แบบประเมินความกังวลสำหรับผู้สังเกตการณ์ (mYPAS)</p>
+			
+					<div class="orange" align="left" data-role="content"> 
+					<p class="mypashn" align="right">HN</p>
+				<p class="head10" align="center">D. ระดับการกระตุ้น (State of apparent arousal))</p>
+				  
+				 <div data-role="fieldcontain" data-type="horizontal">
+					<fieldset data-role="controlgroup">
+					  <input type="radio" class="radio" name="radio4" id="radio4_0" value="" checked/>
+					  <label for="radio4_0">1 = ตื่นตัว มองรอบๆบ้าง สังเกตหรือมองดูว่าหมอหรือพยาบาลจะมาทำอะไรกับตัวเอง
+(Alert, looks around occasionally, notices or watches what doctor does with him/her (could be relaxed). 
+</label>
+					  <input type="radio" class="radio" name="radio4" id="radio4_1" value="" />
+					  <label for="radio4_1">2 = ถอยหนี นั่งเงียบเฉย อาจดูดนิ้วหรือหันหน้าเข้าหาพ่อแม่
+(Withdrawn, child sitting still and quiet, may be sucking on thumb or face turned into adult.)
+</label>
+					  <input type="radio" class="radio" name="radio4" id="radio4_2" value="" />
+					  <label for="radio4_2">3 = ระแวดระวัง มองไปรอบๆ อาจสะดุ้งตื่นกลัวต่อเสียง ตาเบิกโพรง ตัวเกร็ง
+(Vigilant, looking quickly all around, may startle to sounds, eyes wide, body tensed.)  
+</label>
+					  <input type="radio" class="radio" name="radio4" id="radio4_3" value="" />
+					  <label for="radio4_3">4 = ตื่นตกใจ คร่ำครวญ อาจร้องไห้หรือผลักผู้อื่นออก เดินหนี
+(Panicked whimpering, may be crying or pushing others away, turns away.)
+</label>
+					</fieldset>
+				  </div>
+
+				  <a href="#mypas5"><img class="next" src="img/next.png" align="right"></a>
+				  
+			</div>	
+			<img class="back" src="img/back.png" align="right">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">  
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div> 	 
+		
+		<!-- myPAS Page 5-->
+		<div id="mypas5" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head8" align="center">แบบประเมินความกังวลสำหรับผู้สังเกตการณ์ (mYPAS)</p>
+		
+				<div class="orange" align="left" data-role="content"> 
+				<p  class="mypashn" align="right">HN</p>
+				<p class="head10" align="center">E. การตอบสนองกับผู้ปกครอง (Use of parents )</p>
+				  
+				 <div data-role="fieldcontain" data-type="horizontal">
+					<fieldset data-role="controlgroup">
+					  <input type="radio" class="radio" name="radio5" id="radio5_0" value="" checked/>
+					  <label for="radio5_0">1 = ง่วนอยู่กับการเล่น หรือนั่งเฉยๆ หรือนั่งทำกิจกรรมที่เหมาะสมกับวัย โดยไม่ต้องพึ่งพิงพ่อแม่ อาจมีการตอบสนองกับพ่อแม่ เมื่อพ่อแม่เป็นผู้ริเริ่ม 
+(Busy playing, sitting idle, or engaged in age-appropriate behavior and does not need parent; may interact with parent if parent initiates the interaction.)
+</label>
+					  <input type="radio" class="radio" name="radio5" id="radio5_1" value="" />
+					  <label for="radio5_1">2 = โผหาพ่อแม่ พูดกับพ่อแม่ ต้องการให้พ่อแม่ปลอบประโลม อาจพิงพ่อแม่
+(Reaches out to parent (approaches parent and speaks to otherwise silent parent), seeks and accepts comfort, may lean against parent.)
+</label>
+					  <input type="radio" class="radio" name="radio5" id="radio5_2" value="" />
+					  <label for="radio5_2">3 = มองพ่อแม่เงียบๆ ได้แต่คอยเฝ้าดู ไม่ได้โหยหาการสัมผัส หรือปลอบประโลม แต่ถ้าพ่อแม่เข้าหาก็ต้องการการปลอบประโลม
+(Looks to parents quietly, apparently watches actions, does not seek contact or comfort, accepts it if offered or clings to parent.)  
+</label>
+					  <input type="radio" class="radio" name="radio5" id="radio5_3" value="" />
+					  <label for="radio5_3">4 = อยู่ห่างจากพ่อแม่ หรือหนีห่าง อาจผลักพ่อแม่ออก หรือเกาะพ่อแม่แน่นอย่างสิ้นหวัง ไม่ยอมปล่อยให้พ่อแม่ไปไหน 
+(Keeps parent at distance or may actively withdraw from parent, may push parent away or desperately clinging to parent and will not let parent go.)
+</label>
+					</fieldset>
+				  </div>
+
+				  
+				  <img class="next database3" src="img/next.png" align="right">
+			</div>	
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">  
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<img class="popuppic3" src="img/buntik.png">
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div> 	 
+		
+		<!-- Matching Page 1-->
+		<div id="match1" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<div class="m1">
+				<div align="right">
+					<img class="howto" src="img/how-a.png">
+				</div>
+				<div align="right">
+					<img class="start" src="img/start-a.png">
+				</div>
+			</div>
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Matching Page 2-->
+		<div id="match2" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Matching Page 3-->
+		<div id="match3" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<div align="right">
+				<img class="start m3 go" src="img/start-a.png">
+			</div>
+		
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png">
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Matching Page -->
+		<div id="match" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<img class="logo reset" src="img/logo.png">  
+			<img class="home reset" src="img/home.png">
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<p class="head1">เกมจับคู่ภาพ</p>
+			
+			<section id="gm">
+					<script>
+					function speakAudio(src) {
+				// Create Media object from src
+				speak_media = new Media(src);
+				
+				// Play audio
+				speak_media.play();
+			}
+					
+					var matchcorrect = "file:///android_asset/www/sound/matchcorrect.mp3";
+					var matchwrong = "";
+					var matchwin = "file:///android_asset/www/sound/matchwin.mp3";
+					var finishgame = "file:///android_asset/www/sound/finishgame.mp3";
+					
+				var back = 'card/backCard.jpg';
+			var tile = ["card/1.jpg","card/2.jpg","card/3.jpg","card/4.jpg","card/5.jpg","card/card1.jpg","card/card2.jpg","card/card3.jpg","card/card4.jpg","card/card5.jpg"];
+			var tile1 = ["card/1.jpg","card/2.jpg","card/3.jpg","card/4.jpg","card/5.jpg","card/card1.jpg","card/card2.jpg","card/card3.jpg","card/card4.jpg","card/card5.jpg"];
+			function randOrd(a, b){
+				return (Math.round(Math.random())-0.5);
+			} 
+			var im = []; 
+			for (var i = 0; i < 5; i++) {
+				im[i] = new Image(); 
+				
+				tile[i] = '<img style=" margin: 10px 0px 10px 10px;" src="'+tile[i]+'" width="100" height="250" alt="tile"  \/>';
+				tile1[i] = tile[i];
+				tile[i+5] = '<img style=" margin: 10px 0px 10px 10px;" src="'+tile[i+5]+'" width="100" height="250" alt="tile"  \/>';
+				tile1[i+5] = tile[i+5];
+			} 
+			
+			function displayBack(i) {
+				document.getElementById('t'+i).innerHTML = '<div onclick="disp('+i+');return false;"><img style=" margin: 10px 0px 10px 10px;" src="'+back+'" width="100" height="250" alt="back" \/><\/div>';
+			}
+			function removeCard(i) {
+				document.getElementById('t'+i).innerHTML = '<div onclick="disp('+i+'){document.disabled=true;};return false;"><img style=" margin: 10px 0px 10px 10px;" src="" width="100" height="250" \/><\/div>';
+			}
+			function endGame() {
+				
+			}
+			var ch1, ch2, tmr, tno, tid, cid, cnt;
+			var count = 0;
+			window.onload=start; 
+			function start() {
+				for (var i = 0; i <= 9 ;i++) 
+				displayBack(i);
+				clearInterval(tid);
+				tmr = tno = cnt = 0;
+				tile.sort( randOrd );
+				//cntr(); 
+				tid = setInterval('cntr()', 1000);
+			}
+			function cntr() {
+				var min = Math.floor(tmr/60);
+				var sec = tmr%60;
+				//document.getElementById('cnt').value = min+':'+ (sec<10 ? '0' : '') + sec;tmr++;
+			} 
+			function disp(sel) {
+				if (tno>1) {
+					clearTimeout(cid); conceal();
+				}
+				document.getElementById('t'+sel).innerHTML = tile[sel];
+				if (tno==0) 
+					ch1 = sel;
+				else {
+					ch2 = sel;  
+					cid = setTimeout('conceal()', 900);
+				}
+				tno++;
+			} 
+			function conceal() {
+				tno = 0;
+				if (tile[ch1] == tile1[0] && tile[ch2] == tile1[5]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);	
+					//speakAudio(matchcorrect);	
+				} 
+				else if (tile[ch1] == tile1[5] && tile[ch2] == tile1[0]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);	
+					//speakAudio(matchcorrect);	
+				} 
+				else if (tile[ch1] == tile1[1] && tile[ch2] == tile1[6]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);
+					//speakAudio(matchcorrect);			
+				} 
+				else if (tile[ch1] == tile1[6] && tile[ch2] == tile1[1]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);
+					//speakAudio(matchcorrect);		
+				} 
+				else if (tile[ch1] == tile1[2] && tile[ch2] == tile1[7]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);
+					//speakAudio(matchcorrect);		
+				} 
+				else if (tile[ch1] == tile1[7] && tile[ch2] == tile1[2]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);
+					//speakAudio(matchcorrect);			
+				} 
+				else if (tile[ch1] == tile1[3] && tile[ch2] == tile1[8]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);
+					//speakAudio(matchcorrect);			
+				} 
+				else if (tile[ch1] == tile1[8] && tile[ch2] == tile1[3]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);
+					//speakAudio(matchcorrect);	
+				} 
+				else if (tile[ch1] == tile1[4] && tile[ch2] == tile1[9]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);
+					//speakAudio(matchcorrect);	
+				} 
+				else if (tile[ch1] == tile1[9] && tile[ch2] == tile1[4]) {
+					cnt++;
+					removeCard(ch1);
+					removeCard(ch2);	
+					//speakAudio(matchcorrect);		
+				} 
+
+				else {
+					displayBack(ch1);
+					displayBack(ch2);
+					//speakAudio(matchwrong);	
+				}	 
+				if (cnt >= 5) {
+					count++;
+					
+					clearInterval(tid);
+					start();
+					$.mobile.changePage("#match2");
+					//speakAudio(matchwin);
+					setTimeout(function() {
+						//speakAudio(finishgame);
+					},1000);					
+					setTimeout(function() {
+						$.mobile.changePage("#main1");
+					},3000);
+				}
+				
+				$('.reset').click(function(){
+					clearInterval(tid);
+					start();
+				});
+			}
+			
+			document.write('<div align="center"><table cellpadding="0" cellspacing="0" border="0">');
+			for (var a = 0; a <= 1; a++) {
+				document.write('<tr>');
+				for (var b = 0; b <= 4; b++) {
+					document.write('<td align="center" class="blk" id="t'+((5*a)+b)+'"></td>');
+				}
+				document.write('<\/tr>');
+			}
+			document.write('</table></div>');
+			
+			</script>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div> 	 
+		
+		<!-- Paint Page 1 -->
+		<div id="paint" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">มาระบายสีกันเถอะ</p>
+			
+			<div class="orange" align="center" data-role="content"> 
+				<p class="head2">มาเลือกรูปภาพกันนะ</p>
+				<img class="paintstage paintstage1" src="img/button-w-1.png">
+				<img class="paintstage paintstage2" src="img/button-w-2.png">
+				<img class="paintstage paintstage3" src="img/button-w-3.png">
+				<img class="paintstage paintstage4" src="img/button-w-4.png">
+				
+			</div>	
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png"> 
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Paint Page 2-->
+		<div id="paint2" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">มาระบายสีกันเถอะ</p>
+			
+			<div class="paint" align="center" data-role="content">
+				<img src="img/yasha/1/1_0.png" onclick="alert(1)">	
+				<img src="img/yasha/2/2_0.png" onclick="alert(2)">	
+				<img src="img/yasha/3/3_0.png" onclick="alert(3)">	
+				<img src="img/yasha/4/4_0.png" onclick="alert(4)">	
+				<img src="img/yasha/5/5_0.png" onclick="alert(5)">	
+				<img src="img/yasha/6/6_0.png" onclick="alert(6)">	
+				<img src="img/yasha/7/7_0.png" onclick="alert(7)">	
+				<img src="img/yasha/8/8_0.png" onclick="alert(8)">	
+				<map name="planetmap">
+				  <area shape="rect" coords="0,0,82,126" href="a" alt="Sun">
+				  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+				  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+				</map>		
+			</div>	
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png"> 
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Simulator Page -->
+		<div class="balloon" id="sim" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />	
+			<p class="head1">จำลองสถานการณ์กันหน่อยน้า</p>
+			
+			<div class="orange" align="center" data-role="content"> 
+				
+				<p class="head1" style="color:white">กำลังพัฒนา</p>
+				
+			</div>	
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png"> 
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Stat Page -->
+		<div id="stat" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">สถิติการประเมิน</p>
+			
+			<div class="orange" align="center" data-role="content"> 
+				<table class="table1" style="width:100%">
+				  <caption>ตารางเก็บข้อมูลผู้ป่วย</caption>
+					<tr>
+						<td>HN</td>
+						<td>อายุ</td>
+						<td>เพศ</td>
+						<td>กลุ่ม</td>
+					</tr>
+				</table>
+				
+				<table class="table2" style="width:100%">
+				  <caption>ตารางเก็บข้อมูลการประเมินผู้ป่วยกลุ่ม A</caption>
+					<tr>
+						<td>HN</td>
+						<td>คะแนนของผู้ป่วยก่อนชมวิดีโอ</td>
+						<td>คะแนนของผู้ป่วยหลังชมวิดีโอ</td>
+						<td>คะแนนของผู้ปกครองก่อนชมวิดีโอ</td>
+						<td>คะแนนของผู้ปกครองหลังชมวิดีโอ</td>
+					</tr>
+				</table>
+				
+				<table class="table3" style="width:100%">
+				  <caption>ตารางเก็บข้อมูลการประเมินผู้ป่วยกลุ่ม B</caption>
+					<tr>
+						<td>HN</td>
+						<td>คะแนนของผู้ป่วย</td>
+						<td>คะแนนของผู้ปกครอง</td>
+					</tr>
+				</table>
+				
+				<table class="table4" style="width:100%">
+				  <caption>ตารางการประเมินของแพทย์และพยาบาล</caption>
+					<tr>
+						<td>HN</td>
+						<td>A</td>
+						<td>B</td>
+						<td>C</td>
+						<td>D</td>
+						<td>E</td>
+						<td>ค่าเฉลี่ย</td>
+						<td>ประเมินโดย</td>
+					</tr>
+				</table>
+			</div>	
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png"> 
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Choose HN Page -->
+		<div id="choosehn" align="center" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<p class="head1">กรุณาเลือกผู้ป่วยที่ยังไม่ประเมิน</p>
+			
+			<div class="orange" align="center" data-role="content"> 
+				
+			</div>	
+			
+			<img class="back" src="img/back.png" align="left">
+			<img class="home" src="img/home.png">
+			<img class="logo" src="img/logo.png"> 
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- bo -->
+		<div class="choosesta" id="choosesta" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<h1 class="head1" align="center">ข้อมูลและสถิติ</h1>
+			
+			
+			<div class="orange" align="center" data-role="content"> 
+				<div class="alignsta">
+					<img src="img/groupasta1.png" class="imga"/>
+					<img src="img/groupastb1.png" class="imgb"/>
+				</div>	
+			</div>	
+		
+			
+			<img class="logo" src="img/logo.png"> 
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="groupa" id="pagegroupa" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<h1>ข้อมูล และสถิติของกลุ่ม A</h1>
+			
+			<div class="table">
+				<h3>จำนวนผู้ป่วยในกลุ่ม A ทั้งหมด : <span class="countA"><span></h3>
+				<div id="peoplea" class="CSSTableGenerator">
+					<table>
+						<tr>
+							<td>HN</td>
+							<td>VASผู้ป่วย(ก่อน)</td>
+							<td>VASผู้ป่วย(หลัง)</td>
+							<td>VASผู้ปกครอง(ก่อน)</td>
+							<td>VASผู้ปกครอง(หลัง)</td>
+							<td>mYPAS</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr><tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+					
+				
+					
+						<tr>
+							<td>MIN</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						
+						<tr>
+							<td>MAX</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						
+						<tr>
+							<td>AVG</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						
+						<tr>
+							<td>STD</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							
+						</tr>
+						
+					</table>
+				</div>
+				
+				
+			</div>
+			
+			<div  id="avga">
+			</div>
+			
+			
+			<img class="logo" src="img/logo.png" /> 
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="groupb" id="pagegroupb" data-role="page">
+			<img class="grouppic" src="img/ga.png" />
+			<h1>ข้อมูล และสถิติของกลุ่ม B</h1>
+		
+			<div class="table">
+				<h3>จำนวนผู้ป่วยในกลุ่ม B ทั้งหมด :  <span class="countB"><span></h3>
+				<div  id="peoplea" class="CSSTableGenerator">
+					<table>
+						<tr>
+							<td>HN</td>
+							<td>VASผู้ป่วย</td>
+							<td>VASผู้ป่วย</td>
+							<td>mYPAS</td>
+							
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>11111111</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+					
+				
+					
+						<tr>
+							<td>MIN</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>MAX</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>AVG</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>STD</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						
+					</table>
+				</div>
+				
+				
+			</div>
+			
+			<div  id="avgb">
+			</div>
+			
+			
+			<img class="logo" src="img/logo.png" /></a>
+			<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+			<div class="popuplogout">
+				<img class="popimg" src="img/popup-logout.png" />
+				<div>
+					<img class="popcan" src="img/popcan.png" />
+					<img class="popok" src="img/popok.png" />
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<script>
+			$('.imga').click(function(){
+					$(this).attr('src','img/groupasta2.png');
+					setTimeout(function() {
+						$.mobile.changePage("#pagegroupa");
+						$('.imga').attr('src','img/groupasta1.png');
+					},200);
+				});
+				
+				
+			$('.imgb').click(function(){
+					$(this).attr('src','img/groupastb2.png');
+					setTimeout(function() {
+						$.mobile.changePage("#pagegroupb");
+						$('.imgb').attr('src','img/groupastb1.png');
+					},200);
+				});
+				
+				
+		</script>
+	
+		<script>
+			var mc = 1;
+			var cc = 1;
+			var i = $("#main");
+			var isPlay = 0;
+			
+			var my_media = null;
+			var click_media = null;
+			var speak_media = null;
+			
+			function playAudio(src) {
+				var loop = function (status) {
+					if (status === Media.MEDIA_STOPPED) {
+						my_media.play();
+					}
+				}
+			
+				// Create Media object from src
+				if(!my_media){
+					my_media = new Media(src, null, null, loop);
+				}
+				// Play audio
+				if(mc){
+						if(isPlay == 0){
+							my_media.play();
+							my_media.setVolume(0.1);
+						}
+						
+						mc = 0;
+					setTimeout(function() {
+						mc = 1;
+					},500);
+				}
+			}
+			
+			function clickAudio(src) {
+				// Create Media object from src
+				if(!click_media)
+				click_media = new Media(src);
+				// Play audio
+				click_media.play();
+				click_media.setVolume(0.2);
+			}
+			
+			function speakAudio(src) {
+				// Create Media object from src
+				speak_media = new Media(src);
+				
+				// Play audio
+				speak_media.play();
+				speak_media.setVolume(0.2);
+			}
+
+			function pauseAudio() {
+				my_media.pause();
+			}
+			
+			function stopAudio() {
+				my_media.stop();
+				
+				clearInterval(mediaTimer);
+				mediaTimer = null;
+			}
+			
+		
+			var main = function(){
+				var bgsound = "file:///android_asset/www/sound/bgsound1.mp3";
+				var clicksound = "file:///android_asset/www/sound/click.mp3";
+				var videosound = "file:///android_asset/www/sound/video.mp3";
+				var gamesound = "file:///android_asset/www/sound/game.mp3";
+				var reducesound = "file:///android_asset/www/sound/reduce.mp3";
+				var vassound = "file:///android_asset/www/sound/vas.mp3";
+				var homesound = "file:///android_asset/www/sound/home.mp3";
+				var savesound = "file:///android_asset/www/sound/save.mp3";
+			
+				var video = document.getElementsByTagName('video')[0];
+				var video2 = document.getElementsByTagName('video')[2];
+			
+				var evahn = 0;
+				function selecteva(){
+					var db = openDatabase('hospital', '1.0', 'hospitaldb', 2 * 1024 * 1024);
+					
+					$('#choosehn .orange').empty();
+					
+					db.transaction(function(tx) {
+		
+						tx.executeSql('SELECT DISTINCT hn FROM user WHERE eva = 0',[], function(tx, res) {
+						  $.each(res.rows,function(index){
+							var row = res.rows.item(index);
+							$('#choosehn .orange').append('<input type="button" data-role="button" value="'+row['hn']+'" />').trigger("create");
+							evahn = row['hn'];
+						});
+
+						}, function(e) {
+						  console.log("ERROR: " + e.message);
+						});
+
+					 });
+					 
+				}
+				
+				var choosehn;
+				$('#choosehn .orange input').live('click',function() {
+					$.mobile.changePage("#mypas");
+					choosehn = $(this).val();
+					$('.mypashn').text( "Group: "+group+" HN: "+choosehn);
+				});
+
+				$('img, .logouttext').click(function(){
+					//clickAudio(clicksound);
+				}); 	
+				
+				document.addEventListener("backbutton", onBackKeyDown, false);
+				function onBackKeyDown(e) {
+				  e.preventDefault();
+				}
+				
+				<!-- Change Page Script -->
+				setTimeout(function() {
+					$.mobile.changePage("#touch");
+					
+				},2000); 
+
+			
+				$('#touch').click(function(){
+					<!--$('#loading').show().delay(2000).fadeOut(600);-->
+					//playAudio(bgsound);
+					isPlay = 1;
+					setTimeout(function() {
+						$.mobile.changePage("#login");
+						checksession();
+					},2500);
+				}); 	
+				
+				$('.popuppic').hide();
+									document.getElementById('disablingDiv').style.display='none';
+				$('.popuppic2').hide();
+									document.getElementById('disablingDiv').style.display='none';
+				$('.popuppic3').hide();
+									document.getElementById('disablingDiv').style.display='none';
+				$('.popupsession').hide();
+				
+				var checkdeng = 0;
+				<!-- Main Page Script -->
+				var group = "A";
+				
+				$('.child').click(function(){
+					i = $('#main1');
+					group = "A";
+					$(this).attr('src','img/child1.png');
+					setTimeout(function() {
+						$.mobile.changePage("#confirmkid");
+						$('.child').attr('src','img/child.png');
+					},200);
+				});
+				
+				$('.doctor').click(function(){
+					i = $('#main2');
+					$(".logouttext").text("คุณหมอเมย์");
+					$(this).attr('src','img/doc1.png');
+					setTimeout(function() {
+						$.mobile.changePage("#confirm");
+						$('.doctor').attr('src','img/doc.png');
+					},200);
+				});
+				
+				$('.back').click(function(){
+					window.history.back();
+				});
+				
+				$('.logo').click(function(){
+					//alert(checkdeng);
+					if(checkdeng == 1)
+					{
+						$('.logo').click(false);
+						$.mobile.changePage(i);
+						//speakAudio(homesound);
+						
+					}
+				});
+				
+				$('#vid .logo, #balloon .logo').click(function(){
+					if(isMute == 0){
+						//playAudio(bgsound);
+						isPlay = 1;
+					}
+					video.play();
+					video.currentTime = 0;
+					video.pause();
+					video2.play();
+					video2.currentTime = 0;
+					video2.pause();
+				});
+				
+				
+				
+				$('.home').hide();
+				$('.back').hide();
+				
+				$('.p').click(function(){
+					$.mobile.changePage(i);
+					//speakAudio(homesound);
+				});
+				
+				var hncheck;
+				$('.hh').click(function(){
+					hncheck = $('.hntext1').val().length+$('.hntext2').val().length+$('.hntext3').val().length;
+					if(hncheck != 7){
+					
+					}
+					else{
+						$('.popuppic2').show();
+									document.getElementById('disablingDiv').style.display='block';
+					}
+				});
+				
+				$('.popuppic2').click(function(){
+					$('.popuppic2').hide();
+									document.getElementById('disablingDiv').style.display='none';
+					$.mobile.changePage(i);
+					//speakAudio(homesound);
+					checkdeng = 1;
+					reset();
+				});
+				
+				$('.popuppic3').click(function(){
+					$('.popuppic3').hide();
+									document.getElementById('disablingDiv').style.display='none';
+					$('.pickid').show();
+					$('.scale').show();
+					setTimeout(function() {
+						$.mobile.changePage(i);
+						//speakAudio(homesound);
+					},200); 
+				});
+				
+				$('.popuppic4').live('click',function() {
+					$('.popuppic4').hide();
+									document.getElementById('disablingDiv').style.display='none';
+					$.mobile.changePage(i);
+				});
+
+				
+				$('.hh2').click(function(){
+					$.mobile.changePage(i);
+					//speakAudio(homesound);
+				});
+				
+				
+				$('.pic').css("height",$("#balloon").height());
+				$('.pic').css("width","auto");
+			
+					var fullHeight = $(window).height();
+					var fullWidth = $(window).width();
+				
+				$('.vid').css("width",fullWidth - 30);  
+				$('.vid').css("height",fullHeight - 300);  
+				
+				
+				<!-- Confirm Kid Check -->
+				var inthn = "";
+				var hn = "";
+				var gender = "boy";
+			
+			
+				$('.boy').click(function(){
+					$(this).attr('src','img/boy1.png');
+					$('.girl').attr('src','img/girl.png');
+					gender = "boy";
+				});
+				
+				$('.girl').click(function(){
+					$(this).attr('src','img/girl1.png');
+					$('.boy').attr('src','img/boy.png');
+					gender = "girl";
+				});
+				
+				$('.g1').click(function(){
+					$(this).attr('src','img/g1-1.gif');
+					$('.g2').attr('src','img/g2.gif');
+					$('.g3').attr('src','img/g2.gif');
+					group = "A";
+				});
+				
+				$('.g2').click(function(){
+					$(this).attr('src','img/g2-1.gif');
+					$('.g1').attr('src','img/g1.gif');
+					$('.g3').attr('src','img/g2.gif');
+					
+				});
+				
+				$('.g3').click(function(){
+					$(this).attr('src','img/g2-1.gif');
+					$('.g1').attr('src','img/g1.gif');
+					$('.g2').attr('src','img/g2.gif');
+					group = "B";
+				});
+				
+				var status;
+				$('.get1').click(function(){
+					if(hncheck != 7){
+						$('.popuppic').show();
+									document.getElementById('disablingDiv').style.display='block';
+					}
+					else{
+						inthn = ($('.hntext1').val()+$('.hntext2').val()+$('.hntext3').val());
+						hn = $('.hntext1').val()+"-"+$('.hntext2').val()+"-"+$('.hntext3').val();
+						var gtemp;
+						switch(group){
+							case 1: gtemp = "A"; break;
+							case 2: gtemp = "B"; break;
+							case 3: gtemp = "C";  break;
+						}
+						$(".logouttext").text("HN: "+hn);
+						
+						sameuser(inthn);
+						
+						if(group =="A")
+						{
+							$('.grouppic').attr('src','img/ga.png');
+						}
+					 
+						if(group == "B"){
+							$('.grouppic').attr('src','img/gb.png');
+							$('.button1').hide();
+							$('.button2').hide();
+							$('.button3').hide();
+						}
+						
+						status = getStatus(inthn,group);
+						if(group == "A"){
+							setStatus(0);
+							status = 0;
+						}
+						else{
+							setStatus(11);
+							status = 11;
+						}
+						user(inthn,gender,age,group);
+				
+						
+						//alert("...");
+						updateStatus2(inthn,group);
+					}	
+				});
+				
+
+				var username;
+				$('.get2').click(function(){
+					checkdeng = 1;
+					if($('.button1').text() != ""){						
+						$(this).attr('src','img/g2-1.gif');
+						$('.g1').attr('src','img/g1.gif');
+						$('.g2').attr('src','img/g2.gif');	
+					}
+					$('.grouppic').attr('src','img/gdoc.png');
+					username =  $('.user').val();
+					var password =  $('.password').val();
+					if(username == "doctor" && password == "1234"){
+						doctor(username,password);
+						$('.popuppic2').show();
+						document.getElementById('disablingDiv').style.display='block';
+					}
+					else{
+						$('.popuppic').show();
+						document.getElementById('disablingDiv').style.display='block';
+					}
+				});
+				
+				
+				var month = 1;
+				$('.monthdown').click(function(){
+					if(month > 1){
+						month--;
+					
+						switch(month) {
+							case 1 : $('.age-month').attr('src','img/1.png'); break;
+							case 2 : $('.age-month').attr('src','img/2.png'); break;
+							case 3 : $('.age-month').attr('src','img/3.png'); break;
+							case 4 : $('.age-month').attr('src','img/4.png'); break;
+							case 5 : $('.age-month').attr('src','img/5.png'); break;
+							case 6 : $('.age-month').attr('src','img/6.png'); break;
+							case 7 : $('.age-month').attr('src','img/7.png'); break;
+							case 8 : $('.age-month').attr('src','img/8.png'); break;
+							case 9 : $('.age-month').attr('src','img/9.png'); break;
+							case 10 : $('.age-month').attr('src','img/10.png'); break;
+							case 11 : $('.age-month').attr('src','img/11.png'); break;
+							case 12 : $('.age-month').attr('src','img/12.png'); break;
+						}
+					}
+				});
+				
+				$('.monthup').click(function(){
+					if(month < 12){
+						month++;
+					
+						switch(month) {
+							case 1 : $('.age-month').attr('src','img/1.png'); break;
+							case 2 : $('.age-month').attr('src','img/2.png'); break;
+							case 3 : $('.age-month').attr('src','img/3.png'); break;
+							case 4 : $('.age-month').attr('src','img/4.png'); break;
+							case 5 : $('.age-month').attr('src','img/5.png'); break;
+							case 6 : $('.age-month').attr('src','img/6.png'); break;
+							case 7 : $('.age-month').attr('src','img/7.png'); break;
+							case 8 : $('.age-month').attr('src','img/8.png'); break;
+							case 9 : $('.age-month').attr('src','img/9.png'); break;
+							case 10 : $('.age-month').attr('src','img/10.png'); break;
+							case 11 : $('.age-month').attr('src','img/11.png'); break;
+							case 12 : $('.age-month').attr('src','img/12.png'); break;
+						}
+					}
+				});
+				
+				var year = 5;
+				
+				$('.yeardown').click(function(){
+					if(year > 5){
+						year--;
+					
+						switch(year) {
+							case 5 : $('.age-year').attr('src','img/5.png'); break;
+							case 6 : $('.age-year').attr('src','img/6.png'); break;
+							case 7 : $('.age-year').attr('src','img/7.png'); break;
+							case 8 : $('.age-year').attr('src','img/8.png'); break;
+							case 9 : $('.age-year').attr('src','img/9.png'); break;
+							case 10 : $('.age-year').attr('src','img/10.png'); break;
+							case 11 : $('.age-year').attr('src','img/11.png'); break;
+							case 12 : $('.age-year').attr('src','img/12.png'); break;
+						}
+					}
+				});
+				
+				$('.yearup').click(function(){
+					if(year < 12){
+						year++;
+					
+						switch(year) {
+							case 5 : $('.age-year').attr('src','img/5.png'); break;
+							case 6 : $('.age-year').attr('src','img/6.png'); break;
+							case 7 : $('.age-year').attr('src','img/7.png'); break;
+							case 8 : $('.age-year').attr('src','img/8.png'); break;
+							case 9 : $('.age-year').attr('src','img/9.png'); break;
+							case 10 : $('.age-year').attr('src','img/10.png'); break;
+							case 11 : $('.age-year').attr('src','img/11.png'); break;
+							case 12 : $('.age-year').attr('src','img/12.png'); break;
+						}
+					}
+				});
+				
+			
+				
+				$('.start').click(function(){
+				
+						$(this).attr('src','img/start-b.png');
+						setTimeout(function() {
+							$.mobile.changePage("#match");
+							$('.start').attr('src','img/start-a.png');
+						},200); 
+					});
+
+				$('.howto').click(function(){
+				
+						$(this).attr('src','img/how-b.png');
+						setTimeout(function() {
+							$.mobile.changePage("#match3");
+							$('.howto').attr('src','img/how-a.png');
+						},200); 
+					});			
+
+				$('.start2').click(function(){
+				
+						$(this).attr('src','img/start-bf.png');
+						setTimeout(function() {
+							$.mobile.changePage("#balloon");
+							$('.start2').attr('src','img/start-af.png');
+						},200); 
+					});
+
+				$('.howto2').click(function(){
+				
+						$(this).attr('src','img/how-bf.png');
+						setTimeout(function() {
+							$.mobile.changePage("#balloon2");
+							$('.howto2').attr('src','img/how-af.png');
+						},200); 
+					});						
+				
+				<!-- VAS Kid Check + Database --> 
+				var score = 0;
+				$('.pk1').click(function(){
+					$(this).attr('src','img/p1.png');
+					$('.pk2').attr('src','img/pic2.png');
+					$('.pk3').attr('src','img/pic3.png');
+					$('.pk4').attr('src','img/pic4.png');
+					$('.pk5').attr('src','img/pic5.png');
+					$('.pk6').attr('src','img/pic6.png');
+					score = 0;
+				});
+				
+				$('.pk2').click(function(){
+					$('.pk1').attr('src','img/pic1.png');
+					$(this).attr('src','img/p2.png');
+					$('.pk3').attr('src','img/pic3.png');
+					$('.pk4').attr('src','img/pic4.png');
+					$('.pk5').attr('src','img/pic5.png');
+					$('.pk6').attr('src','img/pic6.png');
+					score = 2;
+				});
+				
+				$('.pk3').click(function(){
+					$('.pk1').attr('src','img/pic1.png');
+					$('.pk2').attr('src','img/pic2.png');
+					$(this).attr('src','img/p3.png');
+					$('.pk4').attr('src','img/pic4.png');
+					$('.pk5').attr('src','img/pic5.png');
+					$('.pk6').attr('src','img/pic6.png');
+					score = 4;
+				});
+				$('.pk4').click(function(){
+					$('.pk1').attr('src','img/pic1.png');
+					$('.pk2').attr('src','img/pic2.png');
+					$('.pk3').attr('src','img/pic3.png');
+					$(this).attr('src','img/p4.png');
+					$('.pk5').attr('src','img/pic5.png');
+					$('.pk6').attr('src','img/pic6.png');
+					score = 6;
+				});
+				$('.pk5').click(function(){
+					$('.pk1').attr('src','img/pic1.png');
+					$('.pk2').attr('src','img/pic2.png');
+					$('.pk3').attr('src','img/pic3.png');
+					$('.pk4').attr('src','img/pic4.png');
+					$(this).attr('src','img/p5.png');
+					$('.pk6').attr('src','img/pic6.png');
+					score = 8;
+				});
+				$('.pk6').click(function(){
+					$('.pk1').attr('src','img/pic1.png');
+					$('.pk2').attr('src','img/pic2.png');
+					$('.pk3').attr('src','img/pic3.png');
+					$('.pk4').attr('src','img/pic4.png');
+					$('.pk5').attr('src','img/pic5.png');
+					$(this).attr('src','img/p6.png');
+					score = 10;
+				});
+				
+				$('.database').click(function(){
+					
+					rate(score,inthn);
+					//alert(status);
+					
+					switch(parseInt(status)){
+						case 0: updateStatus(inthn,10,group); 
+								status = 10;
+								groupA1(inthn,score);
+								$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+								//alert(status+"done");
+								break;
+						case 1: updateStatus(inthn,11,group);
+								status = 11;
+								groupA1(inthn,score);
+								$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+								//alert(status+"done");
+								break;
+						case 2: updateStatus(inthn,12,group); 
+								status = 12;
+								groupA1(inthn,score);	
+								$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+								//alert(status+"done");
+								break;
+						case 10: updateStatus(inthn,20,group); 
+								status = 20;
+								if(group == "A")
+									groupA2(inthn,score);
+								else
+									groupB1(inthn,score);
+								$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+								//alert(status+"done");
+								break;
+						case 11: updateStatus(inthn,21,group);
+								status = 21;
+								if(group == "A")
+									groupA2(inthn,score);
+								else
+									groupB1(inthn,score);
+								$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+								//alert(status+"done");
+								break;
+						case 12: updateStatus(inthn,22,group); 
+								status = 22;
+								if(group == "A")
+									groupA2(inthn,score);
+								else
+									groupB1(inthn,score);
+								$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+								//alert(status+"done");
+								break;		
+						default: $('#evkid').append('<img class="popuppic4" src="img/notsave.png" />');
+								 //alert(status+"x");
+								 break;
+					}
+				
+					//speakAudio(savesound);
+				
+				});
+				
+				<!-- Button Script -->
+				 function reset(){
+					$('input').val("");
+					$('.boy').attr('src','img/boy1.png');
+					$('.girl').attr('src','img/girl.png');
+					$('.age').attr('src','img/5.png');
+					age = 5;
+					$('.g1').attr('src','img/g1-1.gif');
+					$('.g2').attr('src','img/g2.gif');
+					$('.g3').attr('src','img/g2.gif');
+				 }
+				
+				$('.ok').click(function(){
+						$(this).attr('src','img/ok-b.png');
+						setTimeout(function() {
+							$('.ok').attr('src','img/ok-a.png');
+						},200); 
+					});	
+				
+				$('.in').click(function(){
+						$(this).attr('src','img/in-b.png');
+						setTimeout(function() {
+							$('.in').attr('src','img/in-a.png');
+						},200); 
+					});
+				
+				$('.save').click(function(){
+						$(this).attr('src','img/save-b.png');
+						setTimeout(function() {
+							$('.save').attr('src','img/save-a.png');
+						},200); 
+					});		
+				
+				$('.edit').click(function(){
+						$(this).attr('src','img/re-b.png');
+						reset();
+						setTimeout(function() {
+							$('.edit').attr('src','img/re-a.png');
+						},200); 
+					});	
+				
+				$('.cancel').click(function(){
+						$(this).attr('src','img/can-b.png');
+						reset();
+						setTimeout(function() {
+							$.mobile.changePage("#login");
+							$('.cancel').attr('src','img/can-a.png');
+						},200); 
+					});	
+				
+				$('.button1').click(function(){
+					if(status == 0){
+						$(i).append('<img src="img/seefirst.png" class="popuppic6" />');
+						document.getElementById('disablingDiv').style.display='blocky';
+					}
+					else{
+						pauseAudio();
+						isPlay = 0;
+						$(this).attr('src','img/buttonF1.png');
+						
+						setTimeout(function() {
+							$.mobile.changePage("#vid");
+							//speakAudio(videosound);
+							$('.button1').attr('src','img/button1.png');
+						},200); 
+					}
+				});
+
+				$('.button2').click(function(){
+					$(this).attr('src','img/buttonF2.png');
+					
+					setTimeout(function() {
+						$.mobile.changePage("#match1");
+						//speakAudio(gamesound);
+						$('.button2').attr('src','img/button2.png');
+					},200); 
+				});
+
+				$('.button3').click(function(){
+					pauseAudio();
+					isPlay = 0;
+					$(this).attr('src','img/buttonF3.png');
+					
+					setTimeout(function() {
+						$.mobile.changePage("#balloon");
+						//speakAudio(reducesound);
+						$('.button3').attr('src','img/button3.png');
+					},200); 
+				});
+				
+				$('.button4').click(function(){
+					$(this).attr('src','img/buttonF4.png');
+					
+					setTimeout(function() {
+						$.mobile.changePage("#vasmain");
+						//speakAudio(vassound);
+						$('.button4').attr('src','img/button4.png');
+					},200); 
+				});
+				
+			
+				$('.button5').click(function(){
+					$(this).attr('src','img/buttonF5.png');
+					
+					setTimeout(function() {
+						$.mobile.changePage("#choosehn");
+						evahn = selecteva();
+						$('.button5').attr('src','img/button5.png');
+					},200); 
+				});
+				
+				
+				$('.button6').click(function(){
+					$(this).attr('src','img/buttonF6.png');
+					selectall();
+					setTimeout(function() {
+						$.mobile.changePage("#choosesta");
+						$('.button6').attr('src','img/button6.png');
+					},200); 
+					
+				});
+
+				$('.logouttext').click(function(){
+					$('.logouttext').css('color','red');
+					setTimeout(function() {
+						$('.popuplogout').show();
+						document.getElementById('disablingDiv').style.display='block';
+						$('.logouttext').css('color','black');
+					},200); 	
+				
+				});
+
+				$('.popuppic').click(function(){
+					$('.popuppic').hide();
+					document.getElementById('disablingDiv').style.display='none';
+				});
+				
+				$('.popuppic6').live('click',function() {
+					$('.popuppic6').hide();
+					document.getElementById('disablingDiv').style.display='none';
+				});
+				
+				$('.popuplogout').hide();
+				document.getElementById('disablingDiv').style.display='none';		
+						
+				$('.popok').click(function(){
+						
+				$(this).attr('src','img/popok1.png');
+					setTimeout(function() {
+						$.mobile.changePage("#login");
+						$('.popuplogout').hide();
+									document.getElementById('disablingDiv').style.display='none';
+						$('.popok').attr('src','img/popok.png');
+					},200); 
+					show();
+					checkdeng = 0;
+				
+					if(isMute == 0){
+						//playAudio(bgsound);
+						isPlay = 1;
+					}
+					video.play();
+					video.currentTime = 0;
+					video.pause();
+					video2.play();
+					video2.currentTime = 0;
+					video2.pause();
+					
+					vidcheck = 0;
+				});	
+
+				$('.popcan').click(function(){
+					
+				$(this).attr('src','img/popcan.png');
+					setTimeout(function() {
+						$('.popuplogout').hide();
+									document.getElementById('disablingDiv').style.display='none';
+						$('.popcan').attr('src','img/popcan.png');
+					},200); 
+				});	
+
+								
+				$('.popok2').click(function(){		
+					$(this).attr('src','img/popok1.png');
+					setTimeout(function() {
+						$('.popupsession').hide();
+						$('.popok').attr('src','img/popok.png');
+						$.mobile.changePage(i);
+						//speakAudio(homesound);
+						checkdeng = 1;
+						reset();
+					},200); 	
+				});	
+				
+				$('.popcan2').click(function(){
+					
+				$(this).attr('src','img/popcan.png');
+					setTimeout(function() {
+						$('.popupsession').hide();
+						$('.popcan2').attr('src','img/popcan.png');
+					},200); 
+				});			
+
+				$('.con').live('click',function() {
+					
+					$(this).attr('src','img/con2.png');
+					setTimeout(function() {
+						$('.con').attr('src','img/con1.png');
+					},200); 
+					$('.popuppic5').hide();
+									document.getElementById('disablingDiv').style.display='none';
+					$('.con').hide();
+					$('.newhn').hide();
+					status = con(inthn,group);
+				
+					$.mobile.changePage(i);
+					//speakAudio(homesound);
+					checkdeng = 1;
+					reset();
+				});	
+
+				$('.newhn').live('click',function() {
+						
+					updateStatus(inthn,0,group);
+					$(this).attr('src','img/newhn2.png');
+						setTimeout(function() {
+							$('.newhn').attr('src','img/newhn1.png');
+						},200); 
+						$('.popuppic5').hide();
+									document.getElementById('disablingDiv').style.display='none';
+						$('.con').hide();
+						$('.newhn').hide();
+					
+					newhn(inthn,group);
+					
+					if(group == "A"){
+						status = 0;
+					}
+					else{
+						status = 11;
+					}
+						
+					$.mobile.changePage(i);
+					//speakAudio(homesound);
+					checkdeng = 1;
+					reset();
+				});		
+
+				
+				function show() {
+					$('.button1').show();
+					$('.button2').show();
+					$('.button3').show();
+				}
+				
+			
+				
+				
+				
+				$('.grest').click(function(){
+					$(this).attr('src','img/grest2.png');
+					$(".logouttext").text("ผู้เข้าชม");
+					i = $('#main');
+					$('.grouppic').attr('src','img/gg.png');
+					setTimeout(function() {
+						$.mobile.changePage("#main");
+						checkdeng = 1;
+						$('.grest').attr('src','img/grest.png');
+					},200); 
+				});
+				
+				
+				$('.gamematch').click(function(){
+						
+						$(this).attr('src','img/match1.png');
+						setTimeout(function() {
+							$.mobile.changePage("#match1");
+							$('.gamematch').attr('src','img/match.png');
+						},200); 
+					});		
+
+				$('.gamepaint').click(function(){
+						
+						$(this).attr('src','img/paint1.png');
+						setTimeout(function() {
+							$.mobile.changePage("#paint2");
+							$('.gamepaint').attr('src','img/paint.png');
+						},200); 
+					});	
+					
+				$('.paintstage1').click(function(){
+						
+						$(this).attr('src','img/button-w-1-clicked.png');
+						setTimeout(function() {
+							$.mobile.changePage("#paint2");
+							$('.paintstage1').attr('src','img/button-w-1.png');
+						},200); 
+					});	
+					
+				$('.paintstage2').click(function(){
+						
+						$(this).attr('src','img/button-w-2-clicked.png');
+						setTimeout(function() {
+							$.mobile.changePage("#paint2");
+							$('.paintstage2').attr('src','img/button-w-2.png');
+						},200); 
+					});		
+					
+				$('.paintstage3').click(function(){
+						
+						$(this).attr('src','img/button-w-3-clicked.png');
+						setTimeout(function() {
+							$.mobile.changePage("#paint2");
+							$('.paintstage3').attr('src','img/button-w-3.png');
+						},200); 
+					});	
+					
+				$('.paintstage4').click(function(){
+						
+						$(this).attr('src','img/button-w-4-clicked.png');
+						setTimeout(function() {
+							$.mobile.changePage("#paint2");
+							$('.paintstage4').attr('src','img/button-w-4.png');
+						},200); 
+					});	
+					
+					$('.reduceballoon').click(function(){
+						
+						$(this).attr('src','img/balloon1.png');
+						setTimeout(function() {
+							$.mobile.changePage("#balloon");
+							$('.reduceballoon').attr('src','img/balloon.png');
+						},200); 
+					});	
+					
+						$('.reducesim').click(function(){
+				
+						$(this).attr('src','img/simulator1.png');
+						setTimeout(function() {
+							$.mobile.changePage("#sim");
+							$('.reducesim').attr('src','img/simulator.png');
+						},200); 
+					});	
+							
+					
+						$('.vaschild').click(function(){
+						
+						$(this).attr('src','img/child1.png');
+						setTimeout(function() {
+							
+							$.mobile.changePage("#evkid");
+							$('.pk1').attr('src','img/p1.png');
+							$('.pk2').attr('src','img/pic2.png');
+							$('.pk3').attr('src','img/pic3.png');
+							$('.pk4').attr('src','img/pic4.png');
+							$('.pk5').attr('src','img/pic5.png');
+							$('.pk6').attr('src','img/pic6.png');
+							$('.vaschild').attr('src','img/child.png');
+							
+						},200); 
+					});	
+					
+						$('.vasparent').click(function(){
+						
+						$(this).attr('src','img/parent1.png');
+						setTimeout(function() {
+							$.mobile.changePage("#evparent");
+							$('.vasparent').attr('src','img/parent.png');
+							$('.scale').attr('src','img/scale0.png');
+						},200); 
+					});	
+					
+					var s = 0;
+					$('.scaledown').click(function(){
+						if(s >= 0)
+						s--;
+						
+						switch(s) {
+							case 0 : $('.scale').attr('src','img/scale0.png'); break;
+							case 1 : $('.scale').attr('src','img/scale1p.png'); break;
+							case 2 : $('.scale').attr('src','img/scale2p.png'); break;
+							case 3 : $('.scale').attr('src','img/scale3p.png'); break;
+							case 4 : $('.scale').attr('src','img/scale4p.png'); break;
+							case 5 : $('.scale').attr('src','img/scale5p.png'); break;
+							case 6 : $('.scale').attr('src','img/scale6p.png'); break;
+							case 7 : $('.scale').attr('src','img/scale7p.png'); break;
+							case 8 : $('.scale').attr('src','img/scale8p.png'); break;
+							case 9 : $('.scale').attr('src','img/scale9p.png'); break;
+							case 10 : $('.scale').attr('src','img/scale10p.png'); break;
+						}
+					});	
+					
+					$('.scaleup').click(function(){
+						if(s < 10)
+						s++;
+						
+						switch(s) {
+							case 0 : $('.scale').attr('src','img/scale0.png'); break;
+							case 1 : $('.scale').attr('src','img/scale1p.png'); break;
+							case 2 : $('.scale').attr('src','img/scale2p.png'); break;
+							case 3 : $('.scale').attr('src','img/scale3p.png'); break;
+							case 4 : $('.scale').attr('src','img/scale4p.png'); break;
+							case 5 : $('.scale').attr('src','img/scale5p.png'); break;
+							case 6 : $('.scale').attr('src','img/scale6p.png'); break;
+							case 7 : $('.scale').attr('src','img/scale7p.png'); break;
+							case 8 : $('.scale').attr('src','img/scale8p.png'); break;
+							case 9 : $('.scale').attr('src','img/scale9p.png'); break;
+							case 10 : $('.scale').attr('src','img/scale10p.png'); break;
+						}
+						
+						
+					});	
+					
+					<!-- VAS Parent Database -->
+					$('.database2').click(function(){
+						checkuser($('.user').val(),$('.password').val());
+						rate2(s,inthn);
+						
+						//alert(status);
+					
+						switch(parseInt(status)){
+							case 0: updateStatus(inthn,1,group); 
+									status = 1;
+									groupA3(inthn,s);
+									$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+									break;
+							case 10: updateStatus(inthn,11,group);
+									status = 11;
+									groupA3(inthn,s);
+									$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+									break;
+							case 20: updateStatus(inthn,21,group); 
+									status = 21;
+									groupA3(inthn,s);
+									$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+									break;
+							case 1: updateStatus(inthn,2,group); 
+									status = 2;
+									if(group == "A")
+										groupA4(inthn,s);
+									else
+										groupB2(inthn,s);
+									$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+									break;
+							case 11: updateStatus(inthn,12,group);
+									status = 12;
+									if(group == "A")
+										groupA4(inthn,s);
+									else
+										groupB2(inthn,s);
+									$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+									break;
+							case 21: updateStatus(inthn,22,group); 
+									status = 22;
+									if(group == "A")
+										groupA4(inthn,s);
+									else
+										groupB2(inthn,s);
+									$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+									break;		
+							default: $('#evparent').append('<img class="popuppic4" src="img/notsave.png" />'); break;
+						}
+							//speakAudio(savesound);
+							s = 0;
+							$('.scale').attr('src','img/scale0.png'); 
+						});
+						
+					<!-- myPAS DB -->
+					var page = 0;
+					var score1 = 1, score2 = 1, score3 = 1, score4 = 1, score5 = 1;
+					$('#radio1_0').click(function() {
+					   score1 = 1
+					});
+					
+					$('#radio1_1').click(function() {
+					   score1 = 2;
+					});
+					
+					$('#radio1_2').click(function() {
+					   score1 = 3;
+					});
+					
+					$('#radio1_3').click(function() {
+					   score1 = 4;
+					});
+					
+					$('#radio2_0').click(function() {
+					   score2 = 1;
+					});
+					
+					$('#radio2_1').click(function() {
+					   score2 = 2;
+					});
+					
+					$('#radio2_2').click(function() {
+					   score2 = 3;
+					});
+					
+					$('#radio2_3').click(function() {
+					   score2 = 4;
+					});
+					
+					$('#radio2_4').click(function() {
+					   score2 = 5;
+					});
+					
+					$('#radio2_5').click(function() {
+					   score2 = 6;
+					});
+					
+					$('#radio3_0').click(function() {
+					   score3 = 1;
+					});
+					
+					$('#radio3_1').click(function() {
+					   score3 = 2;
+					});
+					
+					$('#radio3_2').click(function() {
+					   score3 = 3;
+					});
+					
+					$('#radio3_3').click(function() {
+					   score3 = 4;
+					});
+					
+					$('#radio4_0').click(function() {
+					   score4 = 1;
+					});
+					
+					$('#radio4_1').click(function() {
+					   score4 = 2;
+					});
+					
+					$('#radio4_2').click(function() {
+					   score4 = 3;
+					});
+					
+					$('#radio4_3').click(function() {
+					   score4 = 4;
+					});
+					
+					$('#radio5_0').click(function() {
+					   score5 = 1;
+					});
+					
+					$('#radio5_1').click(function() {
+					   score5 = 2;
+					});
+					
+					$('#radio5_2').click(function() {
+					   score5 = 3;
+					});
+					
+					$('#radio5_3').click(function() {
+					   score5 = 4;
+					});
+					
+					
+					$('.database3').click(function(){
+						rate3(score1,score2,score3,score4,score5,choosehn,username);
+						mypas(score1,score2,score3,score4,score5,choosehn,group);
+						$('.popuppic3').show();
+									document.getElementById('disablingDiv').style.display='block';
+					});
+						
+					var isMute = 0;	
+					$('.sound').click(function(){
+						if(isMute == 1){
+							$('.sound').attr('src','img/sound.png');
+							isMute = 0;
+							//playAudio(bgsound);
+							isPlay = 1;
+						}
+						else{
+							$('.sound').attr('src','img/mute.png');
+							isMute = 1;
+							pauseAudio();
+							isPlay = 0;
+						}
+						
+					});
+					
+					video.addEventListener('ended', function(){
+						this.webkitExitFullScreen();
+						$.mobile.changePage(i);
+						//playAudio(bgsound);
+						isPlay = 1;
+					});
+					
+					video2.addEventListener('ended', function(){
+						this.webkitExitFullScreen();
+						$.mobile.changePage(i);
+						//playAudio(bgsound);
+						isPlay = 1;
+					});
+					document.getElementById('disablingDiv').style.display='block';
+					document.getElementById('disablingDiv').style.display='none';
+				}
+				
+				
+				
+			<!-- Center Script -->
+		
+					function centerContent(page)
+					{
+						var container = page;
+						var content = $('.orange');
+						content.css("left", (container.width()-content.width())/2);
+						content.css("top", (container.height()-content.height())/2);	
+					}
+
+			$(document).ready(main);
+		
+		</script>
+		
+		<style>
+		.timer #cnt{
+			background: #F7D358; 
+			font-size: 30px;  
+			margin-left: 875px;
+		}
+		
+		#gm {
+			background: #F7D358;
+			width: 800px;
+			height: 320px;
+			margin: 0 auto;
+			display: block;
+			-moz-box-shadow: 0px 3px 12px #000;
+			-webkit-box-shadow: 0px 3px 12px #000;
+			box-shadow: 0px 3px 12px #000;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;
+			padding: 20px;
+		}
+		
+		#match div.name {
+			color: #01008c;
+			font-size: 35px;
+			margin-left: 360px;
+			font-family: supermarket;
+		}
+	
+		#match {
+			background: url(card/bg.jpg);
+		}
+		</style>
+		
+        <script type="text/javascript" src="cordova.js"></script> 
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1377 @@
+ #logo {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 0%;
+}
+#touch {
+	background: transparent url('../img/page.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+#loading {
+	background: transparent url('../img/loading.gif');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#login {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;
+	min-height: 100%;
+}
+
+#confirm {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;
+	min-height: 100%;
+}
+
+#confirmkid {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;
+	min-height: 100%;
+}
+
+#main {
+	background: transparent url('../img/page.png');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+
+#main1 {
+	background: transparent url('../img/page.png');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+
+#main2 {
+	background: transparent url('../img/page.png');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+
+#vid{
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;	
+}
+
+#game {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;	
+}
+
+#rs{
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;
+}
+
+#sim{
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+
+#balloon1{
+	background: transparent url('../img/wel-bg.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#balloon2{
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#balloon3{
+	background: transparent url('../img/howplay2bg.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#vasmain {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#paint {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#evkid {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#evparent {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#mypas {
+	background: transparent url('../img/3.jpg');
+	background-size : 300% 300%;
+	min-height: 100%;
+	font-family: supermarket;
+}
+
+#mypas2 {
+	background: transparent url('../img/3.jpg');
+	background-size : 300% 300%;
+	min-height: 100%;
+	font-family: supermarket;
+}
+
+#mypas3 {
+	background: transparent url('../img/3.jpg');
+	background-size : 300% 300%;
+	min-height: 100%;
+	font-family: supermarket;
+}
+
+#mypas4 {
+	background: transparent url('../img/3.jpg');
+	background-size : 300% 300%;
+	min-height: 100%;
+	font-family: supermarket;
+}
+
+#mypas4 {
+	background: transparent url('../img/3.jpg');
+	background-size : 300% 300%;
+	min-height: 100%;
+	font-family: supermarket;
+}
+
+#mypas5 {
+	background: transparent url('../img/3.jpg');
+	background-size : 300% 300%;
+	min-height: 100%;
+	font-family: supermarket;
+}
+
+#match1 {
+	background: transparent url('../img/time_game_start-bg.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;	
+}
+
+#match2 {
+	background: transparent url('../img/bg-win.png');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;	
+}
+
+#match3 {
+	background: transparent url('../img/bg-howtoplay.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;	
+}
+
+#ev1 {
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#balloon{
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}		
+
+#stat{
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}	
+
+#choosehn{
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+}
+
+#choosesta{
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+.custom-btn {
+	width: 35% !important;
+	min-width: 160px !important;
+	height: auto !important;
+}
+
+.container {
+	display: inline;
+	margin: 10%;
+}
+
+.touchpic {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	
+}
+
+.towertouch {
+	position: absolute;
+	bottom: 18%;
+	right: 10%;
+	width: 30%;
+}
+
+.con{
+	display:block;
+}
+
+#btgroup {
+	margin-left: 55%
+}
+.dn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 13px;
+	margin-right: 40px;
+}
+
+.textinput{
+	display: block;
+	margin-left: 30%;
+	margin-bottom: -1em;
+}
+.textinput p {
+    display: inline;
+	font-family: supermarket;
+	font-size: 200%;
+	margin-right: 2%;
+	line-height: 200%;
+}
+
+ #tb {
+	display: inline;
+	font-size: 20pt;
+ }
+ 
+ .gender {
+	width: 17%;
+}
+
+.group {
+	width: 9%; 	
+}
+
+
+.textinput2{
+	display: block;
+}
+
+.textinput2 p {
+    display: inline;
+	font-family: supermarket;
+	font-size: 250%;
+	margin-right: 2%;
+	line-height: 200%;
+}
+
+
+.logout {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+}
+
+.grouppic
+{	
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 5%
+}
+
+
+.logouttext{
+	position: absolute;
+	top: -40px;
+	right: 55px;
+	font-family: supermarket;
+	font-size: 200%;
+}
+
+.dc {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.orange {
+	z-index: -1;
+	width: 78%;
+	margin-top:6%;
+	margin-left:auto;
+	margin-right:auto;
+	height: auto%;
+	background-color: rgba(255,204,153,0.7);
+	background-size: 100% 100%;
+	border-radius: 20px;
+}
+
+.evkidhead {
+	font-family: supermarket;
+	font-size: 500%;
+	line-height: 10%;
+}
+
+.pas {
+	position:absolute;
+	width: 90%;
+	background-color: rgba(255,204,153,0.7);
+	background-size: 100% 100%;
+	border-radius: 20px;
+}
+
+.scale {
+	width: 70%;	
+}
+
+.scaledown {
+	margin-bottom: 2%;
+	width: 6%;	
+}
+
+.scaleup {
+	margin-bottom: 2%;
+	width: 6%;	
+}
+
+.pickid {
+	z-index: 5;
+	position: relative;
+	width: 15%;
+	height: auto;
+}
+
+#evkid .echo {
+}
+
+.slider{
+	position: absolute;
+	width: 130%;
+	margin-top: 15%;
+	margin-right: 3%;
+}
+
+.gamepic {
+	height: 180px;
+	width: auto;
+	border-style: solid;
+}
+
+#headY {
+	top: 3px;
+	height: 50px;
+}
+.logo {
+	position: absolute;
+	left: 0.5%;
+	top: 0.5%;
+	width: 108px;
+	height: auto;
+}
+
+
+
+.back {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 15%;
+	height: auto;
+}
+
+.next {
+	position: relative;
+	right: 0;
+	width: 15%;
+	height: auto;
+	margin-top : 1.5%;
+	margin-right : 1%;
+}
+
+.ok  {
+	margin-top: 2%;
+	margin-left: 1%;
+	width: 15%;
+	height: auto;
+}
+
+
+.in  {
+	margin-top: 2%;
+	margin-left: 1%;
+	width: 15%;
+	height: auto;
+}
+
+.save {
+	margin-top: 2%;
+	margin-left: 1%;
+	width: 15%;
+	height: auto;
+}
+
+.edit {
+	margin-top: 2%;
+	width: 15%;
+	height: auto;
+}
+
+.cancel {
+	margin-top: 2%;
+	width: 15%;
+	height: auto;
+}
+
+
+.home {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 15%;
+	height: auto;
+}
+
+.go {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 25%;
+	height: auto;
+}
+
+.mypashead {
+	font-size: 300%;
+	line-height: 50%;
+}
+
+.mypasline {
+	display:block;
+	margin-top: -0.5%;	
+	margin-left: 25px;
+	line-height: 100%;
+}
+
+.yearup img, .yeardown img, .monthup img, .monthdown img{
+	width: 8%;
+	margin-top: -3%;
+}
+
+.ui-radio .ui-radio-on span.ui-btn-inner{
+	color: black;
+   background: #ffa940;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  text-decoration: none;
+}​
+
+html, body { margin: 0; padding: 0; }
+
+#mainpage{	
+	background-image:url("bg.jpg");
+	background-size:100% 100%;
+	height: 100%;
+}
+
+#main2 .mainbutton {
+	margin-top: 2%;
+}
+
+@font-face {
+    font-family: supermarket;
+	src: url(supermarket.ttf);
+}
+
+.mainhead {
+	width: 55%;
+	margin: 4% 25% 6%;
+}
+
+.mainbutton{
+	display: block;
+	margin-top:-4%;
+	margin-right:12%;
+}
+
+
+.mainbutton img {
+	display: block;
+	width: 35%;
+	margin-top: 1%;
+}
+
+
+.maintower{
+	position: absolute;
+	left:0;
+	bottom:0;
+	width: 40%;
+	height: auto;
+	opacity: 0.75;
+	margin-left: 5%;
+	margin-bottom: 0%;
+}
+
+.tower{
+	width: 100%;
+	height: 100%;
+}
+
+.mainlogo{
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+.head
+{
+	font-family: supermarket;
+	line-height: 50%;
+	letter-spacing: 2px;
+	font-size:500%;
+}
+
+.logo
+{
+	margin-left:0;
+	margin-top:0;
+}
+
+.mid
+{
+	background-color: rgba(255,204,153,0.7);
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	border-radius: 20px;
+}
+
+.pic1  img
+{
+	width:25%;
+	height:auto;
+	margin: 0 5% 0 5%;
+}
+
+.pic2  img
+{
+	width:30%;
+	height:auto;
+	margin-bottom: 1%;
+}
+
+.mid1
+{
+	width:15%;
+	height:auto;
+	margin-right:10%;
+}
+
+.mid2
+{
+	width:15%;
+	height:auto;
+	margin-left:10%;
+}
+
+.headreduce
+{
+	font-size:500%;
+}
+
+.logoreduce
+{
+	margin-left:0;
+	margin-top:0;
+}
+
+.midreduce
+{
+	position: absolute;
+	background-color: rgba(255,204,153,0.7);
+	background-size: 100% 100%;
+	width: 90%;
+	border-radius: 20px;
+}
+
+.pic1reduce  img
+{
+	width:30%;
+	height:auto;
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 5%;
+}
+
+.mid1reduce
+{
+	width:15%;
+	height:auto;
+	margin-right:8%;
+}
+
+.mid2reduce
+{
+	width:19%;
+	height:auto;
+	margin-left:8%;
+}
+
+.backreduce  img
+{
+	width:15%;
+	height:auto;
+	position:relative;
+	bottom:0;
+	left:0;
+}
+
+.homereduce img
+{
+	width:15%;
+	height:auto;
+	position:relative;
+	bottom:0;
+	left:0;
+}
+
+.video {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.headgame
+{
+	font-size:500%;
+	line-height: 10%;
+}
+
+.logogame
+{
+	margin-left:0;
+	margin-top:0;
+}
+
+.midgame
+{
+	position: absolute;
+	background-color: rgba(255,204,153,0.7);
+	background-size: 100% 100%;
+	width: 90%;
+	border-radius: 20px;
+}
+
+.pic1game  img
+{
+	width:30%;
+	height:auto;
+}
+
+.mid1game
+{
+	width:15%;
+	height:auto;
+	margin-right:8%;
+}
+
+.mid2game
+{
+	width:19%;
+	height:auto;
+	margin-left:8%;
+}
+
+.backgame  img
+{
+	width:15%;
+	height:auto;
+	position:relative;
+	bottom:0;
+	left:0;
+}
+
+.homegame img
+{
+	width:15%;
+	height:auto;
+	position:relative;
+	bottom:0;
+	left:0;
+}
+
+.paint {
+	position: relative;
+}
+
+.paint img {
+	width: 25%;	
+}
+
+.paint img:nth-child(1) {
+	position: absolute;
+	top: 0px;
+    left: 400px;
+	z-index: 11;
+}
+
+.paint img:nth-child(2) {
+	position: absolute;
+	top: 0px;
+    left: 400px;
+	z-index: 10;
+}
+
+.paint img:nth-child(3) {
+	position: absolute;
+	top: 0px;
+    left: 400px;
+	z-index: 2;
+}
+
+
+.paint img:nth-child(4) {
+	position: absolute;
+	top: 0px;
+    left: 400px;
+	z-index: 10;
+}
+
+.paint img:nth-child(5) {
+	position: absolute;
+	top: 0px;
+    left: 400px;
+}
+
+.paint img:nth-child(6) {
+	position: absolute;
+	top: 0px;
+    left: 400px;
+	z-index: 4;
+}
+
+.paint img:nth-child(7){
+	position: absolute;
+	top: 0px;
+    left: 400px;
+}
+
+.paint img:nth-child(8){
+	position: relative;
+	top: 0px;
+    left: 40px;
+}
+
+/*
+
+.paint img:nth-child(1) {
+	position: absolute;
+	top: 0px;
+    left: 400px;
+	z-index: 11;
+}
+
+.paint img:nth-child(2) {
+	position: absolute;
+	top: 30px;
+    left: 400px;
+	z-index: 10;
+}
+
+.paint img:nth-child(3) {
+	position: absolute;
+	top: 100px;
+    left: 400px;
+	z-index: 2;
+}
+
+
+.paint img:nth-child(4) {
+	position: absolute;
+	top: 120px;
+    left: 400px;
+	z-index: 10;
+}
+
+.paint img:nth-child(5) {
+	position: absolute;
+	top: 140px;
+    left: 400px;
+}
+
+.paint img:nth-child(6) {
+	position: absolute;
+	top: 160px;
+    left: 400px;
+	z-index: 4;
+}
+
+.paint img:nth-child(7){
+	position: absolute;
+	top: 180px;
+    left: 400px;
+}
+
+.paint img:nth-child(8){
+	position: relative;
+	top: 200px;
+    left: 40px;
+}
+*/
+
+.paintstage {
+	width: 20%;
+	height: auto;
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
+
+.balloon {
+	display: block;
+	width: 60%;
+	height: auto;
+}
+
+.head1 {
+	font-size: 350%;
+	font-family: supermarket;
+	line-height: 10%;
+	text-align: center;
+}
+
+.head2 {
+	font-family: supermarket;
+	font-size: 300%;
+	line-height: 10%;
+}
+
+.head2 .kidhead {
+	margin-top: 5%;
+	margin-bottom: 7%;
+	margin-left: 2%;
+}
+
+.head3{
+	font-family: supermarket;
+	font-size: 300%;
+	line-height: 90%;
+}
+
+.head3 p{
+	display: inline;
+	margin: 0 6% 0 10%;
+}
+
+.head4{
+	font-family: supermarket;
+	font-size: 300%;
+	line-height: 90%;
+}
+
+.head4 p{
+	display: inline;
+	margin: 0 1% 0 5%;
+}
+
+.head5{
+	font-family: supermarket;
+	font-size: 300%;
+}
+
+.head5 p{
+	display: inline;
+	margin: 0 5% 0 5%;
+}
+
+.head6{
+	font-family: supermarket;
+	font-size: 300%;
+}
+
+.head6 p{
+	display: inline;
+	margin: 0 -1.5% 0 13%;
+}
+
+.head7{
+	font-family: supermarket;
+	font-size: 200%;
+}
+
+.head8 {
+	font-family: supermarket;
+	font-size: 200%;
+	line-height: 10%;
+}
+
+.head10 {
+	font-family: supermarket;
+	font-size: 200%;
+	line-height: 10%;
+}
+
+.head11 {
+	font-family: supermarket;
+	font-size: 250%;
+	line-height: 10%;
+}
+
+.head11 .kidhead {
+	margin-top: 5%;
+	margin-bottom: 7%;
+	margin-left: 2%;
+}
+
+.kidhead {
+	margin: 0;
+}
+
+.kidnohead {
+	font-size: 50%;
+	margin: 0 0 0 2%;
+}
+
+.age {
+	width: 10%;
+	margin-top: -3%;
+	margin-right: 1%;
+}
+
+/* bird*/
+.age-month {
+	width: 10%;
+	margin-top: -3%;
+	margin-right: 1%;
+}
+
+.age-year {
+	width: 10%;
+	margin-top: -3%;
+	margin-right: 1%;
+}
+
+.inline {
+	display: inline;
+}
+
+.block {
+	display: block;
+}
+
+.m1{
+	margin-top: 27%;
+	margin-right: 10%;
+	
+}
+
+.m1 img{
+	width: 25%;
+	margin: 1%;
+}
+
+.b1{
+	margin-top: 27%;
+	margin-right: 8%;
+	
+}
+
+.b1 img{
+	width: 20%;
+	margin: 1%;
+}
+
+.m3{
+	position: absolute;
+	right:15%;
+	bottom:9%;
+	width: 20%;
+}
+
+.popuppic {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 80%;
+	z-index: 10;
+}
+
+.popuppic2 {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 80%;
+	z-index: 10;
+}
+
+#evparent .popuppic2 {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 80%;
+	z-index: 10;
+}
+
+.popuppic3 {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 80%;
+	z-index: 10;
+}
+
+.popuppic4 {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 80%;
+	z-index: 10;
+}
+
+.popuppic5 {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 80%;
+	z-index: 10;
+}
+
+.popuppic6{
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 80%;
+	z-index: 10;
+}
+
+.popimg {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 80%;
+	z-index: 10;
+}
+
+.popok {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 15%;
+	margin-top: 22%;
+	margin-right: 27%;
+	z-index: 10;
+}
+
+.popcan{
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 15%;
+	margin-top: 22%;
+	margin-right: 7%;
+	z-index: 10;
+}
+
+.popok2{
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 15%;
+	margin-top: 22%;
+	margin-right: 27%;
+	z-index: 10;
+}
+
+.popcan2{
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 15%;
+	margin-top: 22%;
+	margin-right: 7%;
+	z-index: 10;
+}	
+
+.con {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 15%;
+	margin-top: 25%;
+	margin-right: 27%;
+	z-index: 10;
+}
+
+.newhn {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 15%;
+	margin-top: 25%;
+	margin-right: 7%;
+	z-index: 10;
+}
+
+.opacity {
+	opacity: 0;
+}
+
+#login .opacity {
+	font-size: 150%;	
+}
+
+#logo div{
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-top: -2.5%;
+}
+
+#logotu
+ {
+	width:50%;
+}
+
+#logohos
+{
+	width:60%;
+}
+
+.highlight {
+	border: 5px white solid;
+	border-radius: 25px;
+}
+
+.sscore {
+	margin-top: -10%;
+}
+
+.sound {
+	width: 5%;
+	float: right;
+	margin-right: 6%;
+}
+
+#stat table {
+	font-family: supermarket;
+	border: 1px black solid;
+}
+
+#stat caption {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+#stat td tr{
+	border: 1px black solid;
+}
+
+#stat tr:first-child{
+	font-size: 130%;
+}
+
+.mypashn {
+	line-height: 1%;
+	font-size: 130%;
+}
+
+.alignsta
+{
+	display:inline;
+	text-align:right;
+}
+
+.CSSTableGenerator {
+text-align:center;
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.CSSTableGenerator table{
+text-align:center;
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:90%;
+	height:100%;
+	margin:auto;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+text-align:center;
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+text-align:center;
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+text-align:center;
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+text-align:center;
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.CSSTableGenerator tr td{
+text-align:center;
+	
+}
+.CSSTableGenerator tr:nth-child(odd){ background-color:#f4ba84;
+text-align:center; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff;
+text-align:center; }.CSSTableGenerator td{
+text-align:center;
+	vertical-align:middle;
+	
+	
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:10px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.CSSTableGenerator tr:last-child td{
+	text-align:center;
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+text-align:center;
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+text-align:center;
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+text-align:center;
+		background:-o-linear-gradient(bottom, #ff7f00 5%, #bf5f00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7f00), color-stop(1, #bf5f00) );
+	background:-moz-linear-gradient( center top, #ff7f00 5%, #bf5f00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7f00", endColorstr="#bf5f00");	background: -o-linear-gradient(top,#ff7f00,bf5f00);
+
+	background-color:#ff7f00;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.CSSTableGenerator tr:first-child:hover td{
+text-align:center;
+	background:-o-linear-gradient(bottom, #ff7f00 5%, #bf5f00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7f00), color-stop(1, #bf5f00) );
+	background:-moz-linear-gradient( center top, #ff7f00 5%, #bf5f00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7f00", endColorstr="#bf5f00");	background: -o-linear-gradient(top,#ff7f00,bf5f00);
+
+	background-color:#ff7f00;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+text-align:center;
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+text-align:center;
+	border-width:0px 0px 1px 1px;
+}
+
+.imga , .imgb{
+	width: 50%;
+}
+#pagegroupa, #pagegroupb{
+	background: transparent url('../img/3.jpg');
+	background-size : 100% 100%;
+	min-height: 0%;
+	font-family: supermarket;
+	text-align: center;
+}
+
+#disablingDiv
+{
+    /* Do not display it on entry */
+    display: none; 
+
+    /* Display it on the layer with index 1001.
+       Make sure this is the highest z-index value
+       used by layers on that page */
+    z-index: 9;
+    
+    /* make it cover the whole screen */
+    position: absolute; 
+    top: 0%; 
+    left: 0%; 
+    width: 100%; 
+    height: 100%; 
+
+    /* make it white but fully transparent */
+    background-color: white; 
+    opacity:.00; 
+    filter: alpha(opacity=00); 
+}

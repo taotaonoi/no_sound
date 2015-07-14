@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link href= "css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+        <title>หนูไม่กลัวโรงพยาบาล</title>
+		
+    </head>
+    
+    <body>
+        
+        <!-- Logo Page --> 
+        <a id="logo" href="#" data-role="page"></a> 
+        <!-- Touch Screen Page --> 
+        <a id="touch" href="#loading" data-role="page"></a> 
+        <!-- Loading Page --> 
+        <a id="loading" href="#" data-role="page" ></a> 
+        
+		<!-- Login Page -->
+        <div id="login" data-role="page">
+		 <img src="img/logo.png" class="logo" width="91" height="91">
+		
+		 <h1 class="head" align="center">คุณคือใคร?</h1>
+			<div class="mid" align="center">
+				<img src="img/123.png"align="center" class="mid1">
+				<img src="img/456.png" align="center" class="mid2">
+				
+				
+				<div class="pic1">
+					<img src="img/child.png" class="child">
+					<img src="img/doc.png" class="doctor">
+				</div>
+					
+				<div class="pic2" align="center">
+					<img src="img/grest.png" class="grest">
+				</div>
+				
+			</div>	
+		</div>
+        
+        <!-- Main Page (Guest)-->
+        	<div id="main" data-role="page">
+				<div class="mainmain">
+
+					<div class="mainhead" align="right">
+						<h1>เมนูหลัก</h1>
+					</div>
+					
+					<div class="mainbutton" align="right">
+						<img class="button1" src="img/button1.png">
+						<img class="button2" src="img/button2.png">
+						<img class="button3" src="img/button3.png">	
+					</div>
+
+
+					<img class="logout" src="img/logout.png" width="61" height="61" ></img>
+
+		
+					<div class="maintower">
+						<img class ="tower" src="img/tower.png"></img>
+					</div>
+
+					<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+					<div class="mainlogo">
+						<img src="img/logo.png"  width="80" height="80" ></img>
+					</div>
+
+				</div>
+
+			</div>
+			
+		 <!-- Main Page (VAS) --> 
+		<div id="main1" data-role="page">
+          <div class="mainmain">
+
+					<div class="mainhead" align="right">
+						<h1>เมนูหลัก</h1>
+					</div>
+					
+					<div class="mainbutton" align="right">
+						<img class="button1" src="img/button1.png">
+						<img class="button2" src="img/button2.png">
+						<img class="button3" src="img/button3.png">
+						<img class="button4" src="img/button4.png">
+					</div>
+
+
+					<img class="logout" src="img/logout.png" width="61" height="61" ></img>
+
+
+					<div class="maintower">
+						<img class ="tower" src="img/tower.png"></img>
+					</div>
+
+					<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+					<div class="mainlogo">
+						<img src="img/logo.png"  width="80" height="80" ></img>
+					</div>
+
+				</div>
+		</div>
+		 
+		 
+		<!-- Main Page (myPAS) -->  
+		  <div id="main2" data-role="page">
+			  <div class="mainmain">
+
+					<div class="mainhead" align="right">
+						<h1>เมนูหลัก</h1>
+					</div>
+					
+					<div class="mainbutton" align="right">
+						<img class="button1" src="img/button1.png">
+						<img class="button2" src="img/button2.png">
+						<img class="button3" src="img/button3.png">
+						<img class="button5" src="img/button5.png">
+					</div>
+
+
+					<p class ="logouttext"><strong>ลงชื่อออก</strong></p>
+					<img class="logout" src="img/logout.png" width="61" height="61" ></img>
+
+
+					<div class="maintower">
+						<img class ="tower" src="img/tower.png"></img>
+					</div>
+
+					<div class="mainlogo">
+						<img src="img/logo.png"  width="80" height="80" ></img>
+					</div>
+
+				</div>
+		 </div>
+		  
+          <!-- Video Page -->
+        <div data-role="page" id="vid">
+          <div data-role="content" div="con">
+			<iframe src="http://player.vimeo.com/video/41135183" class="vid" controls autoplay seamless ></iframe>
+          </div>
+          <div> <img class="back" src="img/back.png" align="left"></div>
+        </div>
+        
+		<!-- Game Page -->
+        <div data-role="page" id="game">
+		<img src="img/logo.png" class="logo" alt="" name="logo" width="96" height="96" align="left">
+         		
+				<h1 class="headgame" align="center">เกม</h1>
+				
+				<div class="midgame" align="center" data-role="content">
+					<img src="img/CCC.png"align="center" class="mid1game">
+					<img src="img/DDD.png" align="center" class="mid2game">
+					
+				
+					<div class="pic1game"  align="center">
+						<img src="img/match.png" class="child">
+						<img src="img/paint.png" class="doctor">
+					</div>
+					
+					<img class="back2" src="img/back.png" align="left">
+				</div>	
+				
+				<img class="back" src="img/home.png" align="left">
+		  
+        </div>
+		
+		<!-- Reduce Stress Page --> 
+		<div data-role="page" id="rs">			
+			<h1 class="headreduce" align="center">วิธีขจัดความกลัว</h1>
+			
+			<div class="midreduce" align="center" data-role="content">
+				<img src="img/AAA.png"align="center" class="mid1reduce">
+				<img src="img/BBB.png" align="center" class="mid2reduce">
+				
+				<div class="picreduce" align="center">
+					<div class="pic1reduce">
+						<img src="img/balloon.png" class="child">
+						<img src="img/simulator.png" class="doctor">
+					</div>
+				</div>
+				
+				<img class="back2" src="img/back.png" width="61" height="61" align="left">
+			</div>	
+			
+			<img class="back" src="img/home.png" width="61" height="61" align="left">
+			<img src="img/logo.png" class="logo" alt="" name="logo" width="96" height="96" align="left">
+        </div>
+        
+		<div class="balloon" id="balloon" align="center" data-role="page">
+			<img class="pic" src="img/balloon-sun.gif">
+			<img class="back" src="img/back.png" width="61" height="61" align="left">	
+		</div>
+
+		<!-- VAS Page (Child) -->
+		<div align="center" id="evkid" data-role="page">					
+			<div class="kid" align="center" data-role="content"> 
+				
+				<div class="evkidhead">
+					<p>ไหนๆ ตอนนี้น้องๆรู้สึกอย่างไรบ้าง? </p>
+				</div>
+				
+				<div class="evcontent">
+					<img class="scale" src="img/scale.png">
+					<img class="pickid" align="middle" src="img/pic1.png" alt="" onClick="rate(6)">
+					<img class="pickid" align="middle" src="img/pic2.png" alt="" onClick="rate(5)">
+					<img class="pickid" align="middle" src="img/pic3.png" alt="" onClick="rate(4)">
+					<img class="pickid" align="middle" src="img/pic4.png" alt="" onClick="rate(3)">
+					<img class="pickid" align="middle" src="img/pic5.png" alt="" onClick="rate(2)">
+					<img class="pickid" align="middle" src="img/pic6.png" alt="" onClick="rate(1)">
+				</div>    
+				
+				<img class="back2" src="img/back.png" width="61" height="61" align="left">
+			</div>	
+			
+			<img class="back" src="img/home.png" width="61" height="61" align="left">
+			<img src="img/logo.png" class="logo" alt="" name="logo" width="96" height="96" align="left">  
+		</div> 	
+		
+		<!-- myPAS Page -->
+		<div id="mypas" data-role="page">
+		
+			<p class="mypashead" align="center">แบบประเมินความกังวลสำหรับผู้สังเกตการณ์ (mYPAS)</p>
+			<div class="pas" align="left" data-role="content"> 
+				<h3>A.ลักษณะท่าทาง (Activity)</h3>
+				  
+				  <div>
+					<img src="img/blog.png" class="box" width="20" height="20">
+					<div style="display:inline">
+						<p style="display:inline">1 = มองรอบๆห้อง มีท่ามีอยากรู้ เล่นของเล่น อ่านนิทาน (หรือพฤติกรรมตามวัยที่เหมาะสมอื่นๆ) เดินไปมารอบห้อง เพื่อไปหาของเล่นหรือเดินไปหาพ่อแม่ เดินสำรวจเครื่องมือในห้อง</p>
+						<p class="mypasline">(Looking around, curious, playing with toys, read-ing (or other age-appropriate behavior); moves around holding area/treatment room to get toys or go to parent; may move toward OR equipment.)</p>
+					</div>
+				  </div>	
+				  		  
+				  <div>
+					<img src="img/blog.png" class="box" width="20" height="20">
+					<div style="display:inline">
+						<p style="display:inline">2 = ไม่เดินสำรวจไม่เล่น อาจนั่งก้มหน้าหรือลุกลี้ลุกลน ยุกยิกไปมา ดูดนิ้วหรือผ้าห่ม นั่งใกล้ๆ กับพ่อแม่ขณะรอทำหัตถการ หรือเล่นวุ่นวายผิดปกติ</p>
+						<p class="mypasline">(Not exploring or playing, may look down, may fidget with hands or suck thumb (blanket); may sit close to parent while waiting, or play has a definite manic quality.)</p>
+					</div>
+				  </div>
+				  
+				  <div>
+					<img src="img/blog.png" class="box" width="20" height="20">
+					<div style="display:inline">
+						<p style="display:inline">3 = ไม่สนใจของเล่นแต่กลับเข้าหาพ่อแม่ หรือเคลื่อนไหวไปมาโดยไม่ได้ทำกิจกรรมใดๆ มีการเคลื่อนไหวหรือเล่นแบบกลัวสุดขีด บิดตัวไปมาหรือเคลื่อนไหวบนเตียง อาจผลักอุปกรณ์ออก หรืออยู่ติดกับพ่อแม่ไม่ไปไหน</p>
+						<p class="mypasline">(Moving from toy to parent in unfocused manner, nonactivity-derived movements; frenetic/frenzied movement or play; squirming, moving on table, may push mask away, or clinging to parent.)</p>
+					</div>
+				  </div>
+				  
+				  <div>
+					<img src="img/blog.png" class="box" width="20" height="20">
+					<div style="display:inline">
+						<p style="display:inline">4 = พยายามหนี ผลัก เตะ ดิ้น หรือวิ่งไปมาในห้องอย่างไร้จุดหมายในขณะที่รอ ไม่สนใจของเล่น ไม่ยอมแยกจากพ่อแม่ เกาะพ่อแม่ไว้แน่น</p>
+						<p class="mypasline">(Actively trying to get away, pushes with feet and arms, may move whole body; in waiting room, running around unfocused, not looking at toys or will not sepa-rate from parent, desperate clinging.)</p>
+					</div>
+				  </div>
+				  
+				  <img class="back2" src="img/back.png" width="61" height="61" align="left">
+			</div>	
+			
+			<img class="back" src="img/home.png" width="61" height="61" align="left">
+			<img src="img/logo.png" class="logo" alt="" name="logo" width="96" height="96" align="left">  
+			
+		</div> 	 
+		
+		<!-- Matching Page -->
+		<div class="balloon" id="match" align="center" data-role="page">
+			
+		</div>
+		
+		
+		<!-- Paint Page -->
+		<div class="balloon" id="paint" align="center" data-role="page">
+			<img class="pic" src="img/hqdefault.jpg">
+			<img class="back" src="img/back.png" width="61" height="61" align="left">	
+		</div>
+		
+		<div class="balloon" id="sim" align="center" data-role="page">
+			<img class="pic" src="img/doctor-cartoon1.jpg">
+			<img class="back" src="img/back.png" width="61" height="61" align="left">	
+		</div>
+		
+		<script>		
+			var main = function(){
+				<!-- Change Page Script -->
+				$('#logo').show().delay(20000).fadeOut(600);
+				
+				setTimeout(function() {
+					<!-- $.mobile.changePage("#touch"); --> 
+				},2000); 
+
+			
+				$('#touch').click(function(){
+					$('#loading').show().delay(2000).fadeOut(600);
+					setTimeout(function() {
+						$.mobile.changePage("#login");
+					},2000);
+				});
+				
+				$('#touch').click(function(){
+					$('#loading').show().delay(2000).fadeOut(600);
+					setTimeout(function() {
+						$.mobile.changePage("#login");
+					},2000);
+				});
+				
+				<!-- Main Page Script -->
+				var i = $("#main");
+				var temp;
+				$('.child').click(function(){
+					i = $('#main1');
+					$(".dn").text("HN341374");
+					setTimeout(function() {
+						$.mobile.changePage(i);
+					},200);
+				});
+				
+				$('.doctor').click(function(){
+					i = $('#main2');
+					$(".dn").text("คุณหมอเมย์");
+					setTimeout(function() {
+						$.mobile.changePage(i);
+					},200);
+				});
+				
+				$('.back').click(function(){
+					$.mobile.changePage(temp);
+				});
+				
+				$('.back2').click(function(){
+					$.mobile.changePage(temp);
+				});
+				
+				$('.home').click(function(){
+					$.mobile.changePage(i);
+				});
+
+				$('.pic').css("height",$("#balloon").height());
+				$('.pic').css("width","auto");
+			
+				var fullHeight = $(window).height();
+				var fullWidth = $(window).width();
+				
+				$('.vid').css("width",fullWidth);  
+				$('.vid').css("height",fullHeight);  
+				
+				
+				<!-- Button Script -->
+				
+				$('.button1').click(function(){
+					$(this).attr('src','img/buttonF1.png');
+					temp = i;
+					setTimeout(function() {
+						$.mobile.changePage("#vid");
+						$('.button1').attr('src','img/button1.png');
+					},200); 
+				});
+
+				$('.button2').click(function(){
+					$(this).attr('src','img/buttonF2.png');
+					temp = i;
+					setTimeout(function() {
+						$.mobile.changePage("#game");
+						$('.button2').attr('src','img/button2.png');
+					},200); 
+				});
+
+				$('.button3').click(function(){
+					$(this).attr('src','img/buttonF3.png');
+					temp = i;
+					setTimeout(function() {
+						$.mobile.changePage("#rs");
+						$('.button3').attr('src','img/button3.png');
+					},200); 
+				});
+
+				$('.button4').click(function(){
+					$(this).attr('src','img/buttonF4.png');
+					temp = i;
+					setTimeout(function() {
+						$.mobile.changePage("#evkid");
+						$('.button4').attr('src','img/button4.png');
+						centerContent();
+					},200); 
+				});
+
+				$('.button5').click(function(){
+					$(this).attr('src','img/buttonF5.png');
+					temp = i;
+					setTimeout(function() {
+						$.mobile.changePage("#mypas");
+						$('.button5').attr('src','img/button5.png');
+						centerContent();
+					},200); 
+				});
+
+				$('.logout').click(function(){
+					$(this).attr('src','img/logoutF.png');
+					$('.logouttext').css('color','red');
+					setTimeout(function() {
+						$.mobile.changePage("#login");
+						$('.logout').attr('src','img/logout.png');
+						$('.logouttext').css('color','black');
+					},200); 
+				});
+				
+				$('.grest').click(function(){
+					$(this).attr('src','img/grest2.png');
+					main = $('#main');
+					setTimeout(function() {
+						$.mobile.changePage("#main");
+						$('.grest').attr('src','img/grest.png');
+					},200); 
+				});
+					
+			}
+			
+			<!-- Center Script -->
+		
+					function centerContent()
+					{
+						var container = $('#evkid');
+						var content = $('.kid');
+						content.css("left", (container.width()-content.width())/2);
+						content.css("top", (container.height()-content.height())/2);
+						
+						var container2 = $('#mypas');
+						var content2 = $('.pas');
+						content2.css("left", (container2.width()-content2.width())/2);
+						content2.css("top", (container2.height()-content2.height())/2);
+					}				
+				
+			$(document).ready(main);
+			
+		</script>
+		  
+        <script type="text/javascript" src="cordova.js"></script> 
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

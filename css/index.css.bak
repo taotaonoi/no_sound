@@ -1,0 +1,121 @@
+
+	#logo {
+        background: transparent url('../img/1.jpg');
+		  background-size : 100% 100%;
+		   min-height: 0%;
+    }
+    #main {
+        background: transparent url('img/bg.png');
+		  background-size : 100% 100%;
+		  min-height: 100%;
+    }
+	#loading {
+        background: transparent url('img/loading.png');
+		  background-size : 100% 100%;
+		  min-height: 100%;
+    }
+	#page {
+        background: transparent url('img/page.png');
+		 background-size : 100% 100%;
+		  min-height: 100%;
+	} 
+	
+	#evkid{
+		 background: transparent url('img/3.jpg');
+		  background-size : 100% 100%;
+		  min-height: 100%;
+	}
+	
+	#ev1{
+		 background: transparent url('img/3.jpg');
+		  background-size : 100% 100%;
+		  min-height: 100%;
+	}
+	
+	#kid {	
+	   margin: auto;
+       letter-spacing: 3px;
+    } 
+	
+	img {
+		max-width: 100%;
+		height: auto;
+		width: auto\9; /* ie8 */
+	}     
+	
+	.custom-btn {
+		width: 35% !important;
+    	min-width: 160px !important;
+		height: auto !important;
+	}
+	
+	#btgroup{
+		margin-left: 55%
+	}
+	
+	.dn{
+		position: absolute;
+		right:0;
+		top: 0;	
+		font-size: 13px;
+		margin-right: 40px;
+	}
+	
+	.logout{
+		position: absolute;
+		right:0;
+		top: 0;
+		width: 40px;
+		height: 40px;
+	}
+	
+	.dc{
+		position: absolute;
+		left:0;
+		bottom: 0;
+	}
+	
+	.pickid{
+		  width: 15%;
+		height: auto;
+	}
+	
+	fieldset {
+		font-family: BrowalliaUPC; !important
+		font-size: x-large;  !important
+	}
+	
+		table {
+		border-collapse: separate;
+		border-spacing: 10px 50px;
+	}
+	
+	#headY{
+		top: 3px;
+		height: 50px;
+	}
+	
+	#logo{
+		position: absolute;
+		left:0;
+		top: 0;
+	}
+	
+	.back{
+		position: absolute;
+		left:0;
+		bottom: 0;
+	}
+	
+	 #radio .ui-btn-active{  background: #a871f0;
+  background-image: -webkit-linear-gradient(top, #a871f0, #6b20f7);
+  background-image: -moz-linear-gradient(top, #a871f0, #6b20f7);
+  background-image: -ms-linear-gradient(top, #a871f0, #6b20f7);
+  background-image: -o-linear-gradient(top, #a871f0, #6b20f7);
+  background-image: linear-gradient(to bottom, #a871f0, #6b20f7);
+  color: #ffffff;
+  text-decoration: none; }
+  
+  body {
+	font-family: BrowalliaUPC; !important
+	}
